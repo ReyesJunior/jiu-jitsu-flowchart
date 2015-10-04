@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
 // Toggle SlideDown/Slideup Menu 
-	$('.menu-stripes-container').click( function() {
+	$('.dropdown-menu-button').click( function() {
 		$('.nogi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
     });
 	});

@@ -1,19 +1,16 @@
+/* Global Variables */
 
-html, body {
+body {
+
+	font-family: verdana;
 	margin: 0 auto;
 	padding: 0;
 }
 
-.page-wrapper {
+.wrapper {
 	width: 100%;
 	margin: 0 auto;
 	background-color: yellow;
-}
-
-.content-divider {
-	height: 10px;
-	width: 100%;
-	margin: 55px auto 0 auto;
 }
 
 /* ------ No gi Section configurations (global variables) ------ */
@@ -26,74 +23,61 @@ html, body {
 	background-size: cover;
 }
 
-.section-overlay {
+.section-image-overlay {
 	width: 100%;
 	background: rgba(0,0,0,0.50);
 	overflow: hidden; /* To have parent Div cover all it's children */
 }
 
 .section-description-container {
+	height: 100%;
 	width: 100%;
 	margin: 0 auto;
 }
 
 .section-description-header {
-	height: 90px;
+	height: 70px;
 	width: 100%;
 	margin-top: 0px;
 	font-size: 16px;
-	font-family: 'HankenBook';
 	text-align: center;
-	letter-spacing: 16px;
-	padding-top: 16px;
-	line-height: 36px;
+	letter-spacing: 8px;
+	padding-top: 24px;
+	line-height: 24px; /* 1.5x */
 	text-transform: uppercase;
 	color: white;
-	background-color: #FF5719;
+	background-color: orange;
 }
 
-.section-description-paragraph {
-	width: 70%;
+.section-description-paragraph, .sub-section-paragraph {
+	width: 85%;
 	margin: 25px auto;
-	font-size: 12px;
-	font-family: arial;
-	letter-spacing: 2px;
-	line-height: 32px;
-	padding: 8px 4px 4px 24px;
+	font-size: 14px;
+	line-height: 24px; /* 1.7x */
+	padding: 5%;
 	color: white;
-	
-
+	background-color: green;
 }
 
 .sub-section-header {
 	height: 40px;
 	width: 275px;
 	font-size: 14px;
-	font-family: 'HankenBook';
 	text-transform: uppercase;
-	letter-spacing: 8px;
-	line-height: 32px;
-	margin: 35px auto;
-	padding: 6px 0 0 4px;
+	letter-spacing: 6px;
+	margin: 50px auto;
+	padding-top: 18px;
 	color: white;
 	text-align: center;
-	background-color: #00b2b6;
+	background-color: blue;
 }
 
 .sub-section-paragraph {
-	width: 70%;
-	margin: 20px auto;
-	font-size: 12px;
-	font-family: arial;
-	letter-spacing: 2px;
-	line-height: 32px;
-	padding: 8px 12px 0 24px;
-	color: white;
-	background-color: rgba(0,178,182,0.95);
+	background-color: rgba(0,178,182,0.35);
 }
 
 .scroll-sub-section-paragraph {
-	height: 80%;
+	height: 100%;
 	width: 90%;
 	margin: 0 auto;
 	padding: 24px 8px 0 12px;
@@ -102,323 +86,287 @@ html, body {
 	letter-spacing: 1px;
 	color: white;
 	line-height: 32px;
-	overflow: scroll;
 }
 
 .sub-section-header-clicked {
 	background-color: #FF5719;
 }
 
-	/* CSS 0-319px */
 
-	/* - No Gi Header (Fixed) - */
+/* --- Start of Nogi Content --- */
 
-	.nogi-flowchart-header {
-		height: 85px;
-		width: 100%;
-		position: fixed;
-		top: 0;
-		z-index: 1000;
-	}
+.fixed-header {
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	top: 0px;
+	background-color: #eeeeee;
+}
 
-	/* Flowchart Text */
+/* - Navigation panel - */
 
-	.nogi-flowchart-header-text {
-		height: 100%;
-		width: 100%;
-		background-color: #00b2b6; /* #C3C307 */
-	}
+.menu-button-container {
+	height: 50px;
+	width: 50px;
+	margin: 5px auto;
+	float: left;
+	background-color: #eeeeee;
+}
 
-	.nogi-flowchart-header-text p {
-		font-size: 1.125em;
-		font-family: 'HankenBook';
-		margin: 0;
-		padding-top: 12px;
-		margin-left: 80px;
-		text-align: center;
-		letter-spacing: 0.75em;
-		text-transform: uppercase;
-		color: white;
-	}
+.dropdown-menu-button {
+	height: 100%;
+	width: 100%;
+	background-image: url('https://ddiostips.files.wordpress.com/2013/12/burger.png?w=470');
+	background-size: cover;
+}
 
-	.nogi-flowchart-header-text span {
-		font-size: 2em;
-		letter-spacing: 0.375em;
-	}
+/* Dropdown menu */
 
-	/* - Navigation panel - */
+.nogi-dropdown-menu {
+	display: none;
+	position: absolute;
+	height: 355px;
+	width: 175px;
+	top: 44px;
+	left: 0;
+	background-color: #eeeeee;
+}
 
-	.nogi-dropdown-menu-container {
-		position: absolute;
-		height: 60px;
-		width: 80px;
-		top: 0;
-		left: 0;
-	}
+.nogi-dropdown-menu-item {
+	height: 35px;
+	width: 155px;
+	margin: 10px auto 0 0;
+	padding-top: 12px;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	text-align: left;
+	list-style: none;
+	background-color: #eeeeee;
+}
 
-	.menu-stripes-container {
-		height: 75%;
-		width: 100%;
-		background-image: url('https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png');
-		background-size: cover;
-		background-position: 0% 30%;
-	}
+.nogi-dropdown-menu-item a {
+	color: black;
+	text-decoration: none;
+	text-transform: none;
+}
 
-	/* navigation menu */
+/* Fixed-Header Title */
 
-	.nogi-menu-button {
-		height: 30%;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		float: left;
-		text-align: center;
-	}
+.fixed-header-title {
+	height: 60px;
+	width: 80%;
+	margin: 0 auto 0 60px;
+}
+
+.nogi-flowchart {
+	height: 45px;
+	font-size: 24px;
+	margin: 0 auto;
+	padding-top: 15px;
+	text-align: center;
+	color: black;
+	letter-spacing: 0.1em;
+	background-color: #eeeeee;
+}
+
+/* ----- No Gi Homepage Content ----- */
+
+.homepage.section-wrapper {
+	margin-top: 60px;
+	background-image: url('https://torontonogi.files.wordpress.com/2014/10/cropped-dsc0384.jpg');
+}
+
+.homepage.section-description-header {
+	background-color: teal;
+}
+
+/* Nogi content sliders */
 
 
-	.nogi-menu-button-text {
-		height: 100%;
-		font-family: arial;
-		color: black;
-		font-size: 1em;
-		margin-top: 0;
-		padding-left: 4px;
-		letter-spacing: 0.125em;
-		text-transform: uppercase;
-	}
+.slider-wrapper {
+	display: none;
+	width: 100%;
+	margin: 0px auto;
+}
 
-	/* Dropdown menu */
+.slider-content-container {
+	height: 100%;
+	width: 90%;
+	margin: 0 auto;
+	padding: 2% 2.5% 5% 2.5%;
+	background-color: rgba(255,87,25,0.95);
+}
 
-	.nogi-dropdown-menu {
-		display: none;
-		position: absolute;
-		height: 400px;
-		width: 200px;
-		top: 75px;
-		left: 0;
-		background-color: #00b2b6;
-	}
+/* ------ No Gi Stand-up Section ------ */
 
-	.nogi-dropdown-menu-button {
-		height: 35px;
-		width: 215px;
-		margin-top: 12px;
-		margin-left: -28px;
-		padding-top: 14px;
-		letter-spacing: 0.125em;
-		text-align: center;
-		list-style: none;
-		background-color: #FF5719;
-	}
+.stand-up.section-wrapper {
+	background-image: url('http://www.graciemag.com/en/wp-content/uploads/2014/04/1979262_854901214525212_4940845710231558134_o.jpg'); 
+	background-position: 10% 30%;
+}
 
-	.nogi-dropdown-menu-button a {
-		font-family: 'HankenBook';
-		color: white;
-		text-decoration: none;
-		text-transform: none;
-	}
+.stand-up-control-section {
+	width: 100%;
+	margin: 25px auto;
+}
 
-	/* ----- No Gi Homepage Content ----- */
+/* stand-up slider menu */
 
-	.homepage.section-wrapper {
-		margin-top: 75px;
-		background-image: url('https://torontonogi.files.wordpress.com/2014/10/cropped-dsc0384.jpg');
-	}
+#slider-menu-wrapper {
+	height: 40px;
+	width: 100%;
+	margin: 25px auto;
+}
 
-	.homepage.section-description-header {
-		background-color: transparent;
-	}
+/* sidenotes button */
 
-	/* Nogi content sliders */
+.sidenotes-slider-button {
+	height: 40px;
+	width: 125px;
+	float: left;
+	background-color: #00b2b6;
+}
 
-	/* Movement */
+.sidenotes-slider-button-text {
+	height: 100%;
+	width: 100%;
+	margin-top: 0px;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 4px 8px 0 0;
+	color: white;
+}
 
-	.slider-wrapper {
-		display: none;
-		height: 250px;
-		width: 70%;
-		margin: 0px auto;
-	}
+/* Stats Button */
 
-	.slider-content-container {
-		height: 100%;
-		width: 100%;
-		margin: 0 auto;
-		background-color: rgba(255,87,25,0.95);
-	}
+.stats-slider-button {
+	height: 40px;
+	width: 125px;
+	float: right;
+	background-color: #00b2b6;
+}
 
-	/* ------ No Gi Stand-up Section ------ */
+.stats-slider-button-text {
+	height: 100%;
+	width: 100%;
+	margin-top: 0px;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 4px 8px 0 0;
+	color: white;
+}
 
-	.stand-up.section-wrapper {
-		background-image: url('http://www.graciemag.com/en/wp-content/uploads/2014/04/1979262_854901214525212_4940845710231558134_o.jpg'); 
-		background-position: 10% 30%;
-	}
+.standup-slider-clicked {
+	background-color: #FF5719;
+}
 
-	.stand-up-control-section {
-		width: 100%;
-		margin: 25px auto;
-	}
+/* Stand-up slider panels Container */
 
-	/* stand-up slider menu */
+.standup-section-panels-container {
+	width: 100%;
+}
 
-	#slider-menu-wrapper {
-		height: 40px;
-		width: 100%;
-		margin: 25px auto;
-	}
+/* - Left Panel - */
 
-	/* sidenotes button */
+.standup-sidenote-panel {
+	display: none;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	height: 300px;
+	width: 50%;
+	float: left;
+}
 
-	.sidenotes-slider-button {
-		height: 40px;
-		width: 125px;
-		float: left;
-		background-color: #00b2b6;
-	}
+.standup-sidenote-overlay {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255,87,25,0.95);
+	overflow: scroll;
+}
 
-	.sidenotes-slider-button-text {
-		height: 100%;
-		width: 100%;
-		margin-top: 0px;
-		font-size: 14px;
-		font-family: 'HankenBook';
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		padding: 4px 8px 0 0;
-		color: white;
-	}
+.standup-sidenote {
+	font-size: 14px;
+	font-family: arial;
+	letter-spacing: 2px;
+	margin-top: 40px;
+	color: white;
+}
 
-	/* Stats Button */
+.standup-sidenote span {
+	padding-bottom: 2px;
+	border-bottom: solid 1px white;
+}
 
-	.stats-slider-button {
-		height: 40px;
-		width: 125px;
-		float: right;
-		background-color: #00b2b6;
-	}
+.sidenote-item {
+	font-size: 14px;
+	font-family: arial;
+	text-align: left;
+	padding-right: 5px;
+	line-height: 24px;
+	margin-top: 15px;
+}
 
-	.stats-slider-button-text {
-		height: 100%;
-		width: 100%;
-		margin-top: 0px;
-		font-size: 14px;
-		font-family: 'HankenBook';
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		padding: 4px 8px 0 0;
-		color: white;
-	}
+/* - Right Panel - */
 
-	.standup-slider-clicked {
-		background-color: #FF5719;
-	}
+.standup-right-panel {
+	display: none;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	height: 300px;
+	width: 50%;
+	float: right;
+}
 
-	/* Stand-up slider panels Container */
+.standup-right-panel-overlay {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255,87,25,0.95);
+	overflow: scroll;
+}
 
-	.standup-section-panels-container {
-		width: 100%;
-	}
+.standup-statistics-table {
+	font-size: 16px;
+	font-family: arial;
+	letter-spacing: 2px;
+	margin-top: 40px;
+	color: white;
+}
 
-	/* - Left Panel - */
+.standup-statistics-table span {
+	letter-spacing: 2px;
+	border-bottom: solid 1px white;
+}
 
-	.standup-sidenote-panel {
-		display: none;
-		margin-top: 15px;
-		margin-bottom: 25px;
-		height: 300px;
-		width: 50%;
-		float: left;
-	}
+.standup-statistics-table li {
+	font-size: 12px;
+	font-family: arial;
+	text-align: left;
+	padding-right: 5px;
+	line-height: 24px;
+	margin-top: 15px;
+}
 
-	.standup-sidenote-overlay {
-		height: 100%;
-		width: 100%;
-		background-color: rgba(255,87,25,0.95);
-		overflow: scroll;
-	}
+/*------ Guard-play Section ----- */
 
-	.standup-sidenote {
-		font-size: 14px;
-		font-family: arial;
-		letter-spacing: 2px;
-		margin-top: 40px;
-		color: white;
-	}
+.guard-play.section-wrapper {
+	background-image: url('http://www.phase3.biz/core/uploads/JJP/photos/Deep%20half%20to%20xguard%20nogi.jpg');
+}
 
-	.standup-sidenote span {
-		padding-bottom: 2px;
-		border-bottom: solid 1px white;
-	}
+/*----- Dominating Section ------*/
 
-	.sidenote-item {
-		font-size: 14px;
-		font-family: arial;
-		text-align: left;
-		padding-right: 5px;
-		line-height: 24px;
-		margin-top: 15px;
-	}
+.dominating.section-wrapper {
+	background-image: url('http://4.bp.blogspot.com/-1HBaNN6TRY4/UhWTuJ5GdMI/AAAAAAAAAM8/Ll-H64c-or8/s1600/No-Gi-World-Champs-2009-3.jpg');
+	background-position: 20%, 50%;
+}
 
-	/* - Right Panel - */
+/*----- Dominated Section -----*/
 
-	.standup-right-panel {
-		display: none;
-		margin-top: 15px;
-		margin-bottom: 25px;
-		height: 300px;
-		width: 50%;
-		float: right;
-	}
+.dominated.section-wrapper {
 
-	.standup-right-panel-overlay {
-		height: 100%;
-		width: 100%;
-		background-color: rgba(255,87,25,0.95);
-		overflow: scroll;
-	}
-
-	.standup-statistics-table {
-		font-size: 16px;
-		font-family: arial;
-		letter-spacing: 2px;
-		margin-top: 40px;
-		color: white;
-	}
-
-	.standup-statistics-table span {
-		letter-spacing: 2px;
-		border-bottom: solid 1px white;
-	}
-
-	.standup-statistics-table li {
-		font-size: 12px;
-		font-family: arial;
-		text-align: left;
-		padding-right: 5px;
-		line-height: 24px;
-		margin-top: 15px;
-	}
-
-	/*------ Guard-play Section ----- */
-
-	.guard-play.section-wrapper {
-		background-image: url('http://www.phase3.biz/core/uploads/JJP/photos/Deep%20half%20to%20xguard%20nogi.jpg');
-	}
-
-	/*----- Dominating Section ------*/
-
-	.dominating.section-wrapper {
-		background-image: url('http://4.bp.blogspot.com/-1HBaNN6TRY4/UhWTuJ5GdMI/AAAAAAAAAM8/Ll-H64c-or8/s1600/No-Gi-World-Champs-2009-3.jpg');
-		background-position: 20%, 50%;
-	}
-
-	/*----- Dominated Section -----*/
-
-	.dominated.section-wrapper {
-
-	}
+}
 
 
 
