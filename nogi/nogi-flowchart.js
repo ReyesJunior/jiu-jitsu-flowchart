@@ -11,7 +11,7 @@ $(document).ready(function () {
 // Toggle Slider Menus
 // Need to figure out data attribute to make it cleaner!
    $('.js-section-header').click( function() {
-  		$( this ).toggleClass( 'sub-section-header-clicked' );
+  		$(this).toggleClass( 'sub-section-header-clicked' );
 
     var target = $( this ).data('target');
       $('.slider-wrapper[data-id="' + target + '"]').slideToggle('display');

@@ -80,14 +80,14 @@ body {
 }
 
 .sub-section-header-clicked {
-	background-color: #FF5719;
+	background-color: teal;
 }
 
 .sub-section-paragraph {
 	background-color: rgba(0,178,182,0.35);
 }
 
-.scroll-paragraph-toggle {
+.toggle-scroll-paragraph-button {
 	height: 30px;
 	width: 30px;
 	padding-top: 0px;
@@ -99,7 +99,7 @@ body {
 .scroll-sub-section-paragraph {
 	height: 100%;
 	width: 90%;
-	margin: 0 auto;
+	margin: 5px auto;
 	padding: 2.5%;
 	font-size: 14px;
 	font-family: arial;
