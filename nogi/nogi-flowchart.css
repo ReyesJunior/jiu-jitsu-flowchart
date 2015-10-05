@@ -33,6 +33,7 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
+	background-color: red;
 }
 
 .section-description-header {
@@ -59,28 +60,47 @@ body {
 	background-color: green;
 }
 
-.sub-section-header {
+.sub-section-header-container {
 	height: 40px;
 	width: 275px;
-	font-size: 14px;
+	margin: 50px auto 5px auto;
+	padding-top: 12px;
+	background-color: blue;
+}
+
+.sub-section-header {
+	height: 20px;
+	width: 185px;
+	margin: 5px auto;
+	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 6px;
-	margin: 50px auto;
-	padding-top: 18px;
 	color: white;
 	text-align: center;
-	background-color: blue;
+}
+
+.sub-section-header-clicked {
+	background-color: #FF5719;
 }
 
 .sub-section-paragraph {
 	background-color: rgba(0,178,182,0.35);
 }
 
+.scroll-paragraph-toggle {
+	height: 30px;
+	width: 30px;
+	padding-top: 0px;
+	margin-left: 6px;
+	float: left;
+	background-color: red;
+}
+
 .scroll-sub-section-paragraph {
 	height: 100%;
 	width: 90%;
 	margin: 0 auto;
-	padding: 24px 8px 0 12px;
+	padding: 2.5%;
 	font-size: 14px;
 	font-family: arial;
 	letter-spacing: 1px;
@@ -88,8 +108,9 @@ body {
 	line-height: 32px;
 }
 
-.sub-section-header-clicked {
-	background-color: #FF5719;
+.content-space-divider {
+	height: 50px;
+	width: 100%;
 }
 
 
@@ -181,7 +202,6 @@ body {
 }
 
 /* Nogi content sliders */
-
 
 .slider-wrapper {
 	display: none;
