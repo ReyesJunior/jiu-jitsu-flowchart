@@ -229,9 +229,18 @@ body {
 	margin: 25px auto;
 }
 
+.clinch.sub-section-header, .takedown.sub-section-header {
+	height: 35px;
+	width: 275px;
+	margin: 0 auto;
+	padding-top: 12px;
+	background-color: orange;
+}
+
+
 /* stand-up slider menu */
 
-#slider-menu-wrapper {
+.slider-menu-wrapper {
 	height: 40px;
 	width: 100%;
 	margin: 25px auto;
