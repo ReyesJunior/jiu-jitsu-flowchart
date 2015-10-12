@@ -69,8 +69,8 @@ body {
 }
 
 .sub-section-header {
-	height: 20px;
-	width: 185px;
+	height: 90%;
+	width: 90%;
 	margin: 5px auto;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -383,6 +383,22 @@ body {
 .guard-play.section-wrapper {
 	background-image: url('http://www.phase3.biz/core/uploads/JJP/photos/Deep%20half%20to%20xguard%20nogi.jpg');
 }
+
+/*-- Guard-passing Section --*/
+
+.guard-passing.section-wrapper {
+	background-image: url('http://www.grapplearts.com/wp-content/uploads/2013/04/Guard-sweeps-The-Easiest-Sweep-from-Butterfly.png');
+}
+
+.guard-passing.sub-section-header-container {
+	height: 45px;
+}
+
+.guard-passing.sub-section-header {
+	width: 90%;
+	margin: 0 auto;
+}
+
 
 /*----- Dominating Section ------*/
 
