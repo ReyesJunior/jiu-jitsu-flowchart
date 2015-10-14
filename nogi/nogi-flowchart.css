@@ -62,7 +62,7 @@ body {
 
 .sub-section-header-container {
 	height: 40px;
-	width: 275px;
+	width: 280px;
 	margin: 50px auto 5px auto;
 	padding-top: 10px;
 	background-color: blue;
@@ -411,6 +411,14 @@ body {
 
 .dominated.section-wrapper {
 
+}
+
+.dominated.sub-section-header-container {
+	height: 45px;
+}
+
+.dominated.sub-section-header {
+	margin: 0 auto;
 }
 
 
