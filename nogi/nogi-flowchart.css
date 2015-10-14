@@ -146,8 +146,8 @@ body {
 .nogi-dropdown-menu {
 	display: none;
 	position: absolute;
-	height: 355px;
-	width: 175px;
+	height: 350px;
+	width: 150px;
 	top: 44px;
 	left: 0;
 	background-color: #eeeeee;
@@ -155,12 +155,12 @@ body {
 
 .nogi-dropdown-menu-item {
 	height: 35px;
-	width: 155px;
-	margin: 10px auto 0 0;
+	width: 170px;
+	margin: 2px auto 0 -30px;
 	padding-top: 12px;
 	font-size: 16px;
 	letter-spacing: 0.1em;
-	text-align: left;
+	text-align: center;
 	list-style: none;
 	background-color: #eeeeee;
 }
