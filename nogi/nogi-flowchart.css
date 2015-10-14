@@ -229,14 +229,16 @@ body {
 	margin: 25px auto;
 }
 
-.clinch.sub-section-header, .takedown.sub-section-header {
-	height: 35px;
-	width: 275px;
-	margin: 0 auto;
-	padding-top: 12px;
-	background-color: orange;
+.clinch-control.sub-section-header-container {
+
+
 }
 
+.clinch-control.sub-section-header {
+	height: 90%;
+	width: 90%;
+	margin: -2px auto 0 auto;
+}
 
 /* stand-up slider menu */
 
