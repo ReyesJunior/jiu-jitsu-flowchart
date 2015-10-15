@@ -2,16 +2,16 @@ $(document).ready(function () {
 
 
 // Toggle SlideDown/Slideup Menu 
-	$('.menu-stripes-container').click( function() {
-		$('.nogi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
+  $('.dropdown-menu-button').click( function() {
+    $('.nogi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
     });
-	});
+  });
 
 
 // Toggle Slider Menus
 // Need to figure out data attribute to make it cleaner!
    $('.js-section-header').click( function() {
-  		$( this ).toggleClass( 'sub-section-header-clicked' );
+      $(this).toggleClass( 'sub-section-header-clicked' );
 
     var target = $( this ).data('target');
       $('.slider-wrapper[data-id="' + target + '"]').slideToggle('display');
@@ -31,26 +31,3 @@ $(document).ready(function () {
     $('.standup-right-panel').animate({width: 'toggle'}, 500);
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}); // End of doc.ready script
