@@ -31,3 +31,4 @@ $(document).ready(function () {
     $('.standup-right-panel').animate({width: 'toggle'}, 500);
   });
 
+});
