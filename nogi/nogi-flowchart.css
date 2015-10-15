@@ -229,15 +229,10 @@ body {
 	margin: 25px auto;
 }
 
-.clinch-control.sub-section-header-container {
-
-
-}
-
 .clinch-control.sub-section-header {
 	height: 90%;
 	width: 90%;
-	margin: -2px auto 0 auto;
+	margin: -4px auto 0 auto;
 }
 
 /* stand-up slider menu */
