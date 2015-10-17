@@ -2,7 +2,7 @@
 
 body {
 
-	font-family: verdana;
+	font-family: sans-serif;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -10,7 +10,75 @@ body {
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
-	background-color: red;
+	background-color: white;
+}
+/* Fixed-Header Title */
+
+.fixed-header {
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	top: 0px;
+	background-color: #FF1B2C;
+}
+
+.fixed-header-title {
+	height: 100%;
+	width: 225px;
+	margin: 0 auto;
+}
+
+.gi-flowchart {
+	font-size: 24px;
+	margin: 0 auto;
+	padding-top: 16px;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.1em;
+}
+
+/* Dropdown menu */
+
+.menu-button-container {
+	height: 50px;
+	width: 50px;
+	margin: 5px auto;
+	float: left;
+}
+
+.dropdown-menu-button {
+	height: 100%;
+	width: 100%;
+	background-image: url('https://ddiostips.files.wordpress.com/2013/12/burger.png?w=470');
+	background-size: cover;
+}
+
+.gi-dropdown-menu {
+	display: none;
+	position: absolute;
+	height: 350px;
+	width: 150px;
+	top: 44px;
+	left: 0;
+	background-color: #0099ED;
+}
+
+.gi-dropdown-menu-item {
+	height: 35px;
+	width: 170px;
+	margin: 2px auto 0 -30px;
+	padding-top: 12px;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	list-style: none;
+	background-color: #0099ED;
+}
+
+.gi-dropdown-menu-item a {
+	color: white;
+	text-decoration: none;
+	text-transform: none;
 }
 
 /* ------ No gi Section configurations (global variables) ------ */
@@ -20,20 +88,12 @@ body {
 	margin-top: 0px;
 	overflow: hidden; /* To have parent Div cover all it's children */
 	background-attachment: fixed;
-	background-size: cover;
-}
-
-.section-image-overlay {
-	width: 100%;
-	background: rgba(0,0,0,0.50);
-	overflow: hidden; /* To have parent Div cover all it's children */
 }
 
 .section-description-container {
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
-	background-color: red;
 }
 
 .section-description-header {
@@ -47,17 +107,16 @@ body {
 	line-height: 24px; /* 1.5x */
 	text-transform: uppercase;
 	color: white;
-	background-color: orange;
+	background-color: #023549;
 }
 
 .section-description-paragraph, .sub-section-paragraph {
 	width: 85%;
-	margin: 25px auto;
-	font-size: 14px;
-	line-height: 24px; /* 1.7x */
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 26px; /* 1.6x */
 	padding: 5%;
-	color: white;
-	background-color: green;
+	color: #023549;
 }
 
 .sub-section-header-container {
@@ -65,7 +124,7 @@ body {
 	width: 280px;
 	margin: 50px auto 5px auto;
 	padding-top: 10px;
-	background-color: blue;
+	background-color: #0099ED;
 }
 
 .sub-section-header {
@@ -80,20 +139,32 @@ body {
 }
 
 .sub-section-header-clicked {
-	background-color: teal;
-}
-
-.sub-section-paragraph {
-	background-color: rgba(0,178,182,0.35);
+	background-color: #FF1B2C;
 }
 
 .toggle-scroll-paragraph-button {
-	height: 30px;
-	width: 30px;
-	padding-top: 0px;
-	margin-left: 6px;
+	height: 25px;
+	width: 25px;
+	margin-left: 5px;
+	margin-top: 2px;
 	float: left;
-	background-color: red;
+	background-color: white;
+}
+
+/* Gi content sliders */
+
+.slider-wrapper {
+	display: none;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.slider-content-container {
+	height: 100%;
+	width: 90%;
+	margin: 0 auto;
+	padding: 2% 2.5% 5% 2.5%;
+	background-color: #FF1B2C;
 }
 
 .scroll-sub-section-paragraph {
@@ -114,115 +185,17 @@ body {
 }
 
 
-/* --- Start of Nogi Content --- */
-
-.fixed-header {
-	position: fixed;
-	height: 60px;
-	width: 100%;
-	top: 0px;
-	background-color: #eeeeee;
-}
-
-/* - Navigation panel - */
-
-.menu-button-container {
-	height: 50px;
-	width: 50px;
-	margin: 5px auto;
-	float: left;
-	background-color: #eeeeee;
-}
-
-.dropdown-menu-button {
-	height: 100%;
-	width: 100%;
-	background-image: url('https://ddiostips.files.wordpress.com/2013/12/burger.png?w=470');
-	background-size: cover;
-}
-
-/* Dropdown menu */
-
-.nogi-dropdown-menu {
-	display: none;
-	position: absolute;
-	height: 350px;
-	width: 150px;
-	top: 44px;
-	left: 0;
-	background-color: #eeeeee;
-}
-
-.nogi-dropdown-menu-item {
-	height: 35px;
-	width: 170px;
-	margin: 2px auto 0 -30px;
-	padding-top: 12px;
-	font-size: 16px;
-	letter-spacing: 0.1em;
-	text-align: center;
-	list-style: none;
-	background-color: #eeeeee;
-}
-
-.nogi-dropdown-menu-item a {
-	color: black;
-	text-decoration: none;
-	text-transform: none;
-}
-
-/* Fixed-Header Title */
-
-.fixed-header-title {
-	height: 60px;
-	width: 80%;
-	margin: 0 auto 0 60px;
-}
-
-.nogi-flowchart {
-	height: 45px;
-	font-size: 24px;
-	margin: 0 auto;
-	padding-top: 15px;
-	text-align: center;
-	color: black;
-	letter-spacing: 0.1em;
-	background-color: #eeeeee;
-}
+/* --- Start of Gi Content --- */
 
 /* ----- No Gi Homepage Content ----- */
 
-.homepage.section-wrapper {
-	margin-top: 60px;
-	background-image: url('https://torontonogi.files.wordpress.com/2014/10/cropped-dsc0384.jpg');
-}
 
 .homepage.section-description-header {
-	background-color: teal;
+	margin-top: 60px;
 }
 
-/* Nogi content sliders */
-
-.slider-wrapper {
-	display: none;
-	width: 100%;
-	margin: 0px auto;
-}
-
-.slider-content-container {
-	height: 100%;
-	width: 90%;
-	margin: 0 auto;
-	padding: 2% 2.5% 5% 2.5%;
-	background-color: rgba(255,87,25,0.95);
-}
 
 /* ------ No Gi Stand-up Section ------ */
-
-.stand-up.section-wrapper {
-	background-image: url('http://www.graciemag.com/en/wp-content/uploads/2014/04/1979262_854901214525212_4940845710231558134_o.jpg'); 
-	background-position: 10% 30%;
-}
 
 .stand-up-control-section {
 	width: 100%;
@@ -231,8 +204,7 @@ body {
 
 .clinch-control.sub-section-header {
 	height: 90%;
-	width: 90%;
-	margin: -4px auto 0 auto;
+	width: 100%;
 }
 
 /* stand-up slider menu */
@@ -377,15 +349,7 @@ body {
 
 /*------ Guard-play Section ----- */
 
-.guard-play.section-wrapper {
-	background-image: url('http://www.phase3.biz/core/uploads/JJP/photos/Deep%20half%20to%20xguard%20nogi.jpg');
-}
-
 /*-- Guard-passing Section --*/
-
-.guard-passing.section-wrapper {
-	background-image: url('http://www.grapplearts.com/wp-content/uploads/2013/04/Guard-sweeps-The-Easiest-Sweep-from-Butterfly.png');
-}
 
 .guard-passing.sub-section-header-container {
 	height: 45px;
@@ -399,22 +363,16 @@ body {
 
 /*----- Dominating Section ------*/
 
-.dominating.section-wrapper {
-	background-image: url('http://4.bp.blogspot.com/-1HBaNN6TRY4/UhWTuJ5GdMI/AAAAAAAAAM8/Ll-H64c-or8/s1600/No-Gi-World-Champs-2009-3.jpg');
-	background-position: 20%, 50%;
-}
 
 /*----- Dominated Section -----*/
 
-.dominated.section-wrapper {
-
-}
 
 .dominated.sub-section-header-container {
 	height: 45px;
 }
 
 .dominated.sub-section-header {
+	width: 100%;
 	margin: 0 auto;
 }
 

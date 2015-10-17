@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 // Toggle SlideDown/Slideup Menu 
   $('.dropdown-menu-button').click( function() {
-    $('.nogi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
+    $('.gi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
     });
   });
 
