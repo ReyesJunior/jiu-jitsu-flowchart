@@ -1,7 +1,5 @@
-/* Global Variables */
 
 body {
-
 	font-family: sans-serif;
 	margin: 0 auto;
 	padding: 0;
@@ -12,7 +10,14 @@ body {
 	margin: 0 auto;
 	background-color: white;
 }
-/* Fixed-Header Title */
+
+.content-space-divider {
+	height: 50px;
+	width: 100%;
+}
+
+
+/* Fixed-Header and Title */
 
 .fixed-header {
 	position: fixed;
@@ -81,13 +86,12 @@ body {
 	text-transform: none;
 }
 
-/* ------ No gi Section configurations (global variables) ------ */
+/* ------ Gi Section (global variables) ------ */
 
 .section-wrapper {
 	width: 100%;
 	margin-top: 0px;
 	overflow: hidden; /* To have parent Div cover all it's children */
-	background-attachment: fixed;
 }
 
 .section-description-container {
@@ -110,7 +114,7 @@ body {
 	background-color: #023549;
 }
 
-.section-description-paragraph, .sub-section-paragraph {
+.section-description-paragraph {
 	width: 85%;
 	margin: 0 auto;
 	font-size: 16px;
@@ -118,6 +122,8 @@ body {
 	padding: 5%;
 	color: #023549;
 }
+
+/* ------ Gi Sub-section (global variables) ------ */
 
 .sub-section-header-container {
 	height: 40px;
@@ -151,7 +157,7 @@ body {
 	background-color: white;
 }
 
-/* Gi content sliders */
+/* ------ Slider Content (global variables) ------ */
 
 .slider-wrapper {
 	display: none;
@@ -179,175 +185,23 @@ body {
 	line-height: 32px;
 }
 
-.content-space-divider {
-	height: 50px;
-	width: 100%;
-}
-
-
-/* --- Start of Gi Content --- */
-
-/* ----- No Gi Homepage Content ----- */
-
+/* ----- Homepage Section ----- */
 
 .homepage.section-description-header {
 	margin-top: 60px;
 }
 
 
-/* ------ No Gi Stand-up Section ------ */
-
-.stand-up-control-section {
-	width: 100%;
-	margin: 25px auto;
-}
+/* ------ Stand-up Section ------ */
 
 .clinch-control.sub-section-header {
 	height: 90%;
 	width: 100%;
 }
 
-/* stand-up slider menu */
-
-.slider-menu-wrapper {
-	height: 40px;
-	width: 100%;
-	margin: 25px auto;
-}
-
-/* sidenotes button */
-
-.sidenotes-slider-button {
-	height: 40px;
-	width: 125px;
-	float: left;
-	background-color: #00b2b6;
-}
-
-.sidenotes-slider-button-text {
-	height: 100%;
-	width: 100%;
-	margin-top: 0px;
-	font-size: 14px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding: 4px 8px 0 0;
-	color: white;
-}
-
-/* Stats Button */
-
-.stats-slider-button {
-	height: 40px;
-	width: 125px;
-	float: right;
-	background-color: #00b2b6;
-}
-
-.stats-slider-button-text {
-	height: 100%;
-	width: 100%;
-	margin-top: 0px;
-	font-size: 14px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding: 4px 8px 0 0;
-	color: white;
-}
-
-.standup-slider-clicked {
-	background-color: #FF5719;
-}
-
-/* Stand-up slider panels Container */
-
-.standup-section-panels-container {
-	width: 100%;
-}
-
-/* - Left Panel - */
-
-.standup-sidenote-panel {
-	display: none;
-	margin-top: 15px;
-	margin-bottom: 25px;
-	height: 300px;
-	width: 50%;
-	float: left;
-}
-
-.standup-sidenote-overlay {
-	height: 100%;
-	width: 100%;
-	background-color: rgba(255,87,25,0.95);
-	overflow: scroll;
-}
-
-.standup-sidenote {
-	font-size: 14px;
-	font-family: arial;
-	letter-spacing: 2px;
-	margin-top: 40px;
-	color: white;
-}
-
-.standup-sidenote span {
-	padding-bottom: 2px;
-	border-bottom: solid 1px white;
-}
-
-.sidenote-item {
-	font-size: 14px;
-	font-family: arial;
-	text-align: left;
-	padding-right: 5px;
-	line-height: 24px;
-	margin-top: 15px;
-}
-
-/* - Right Panel - */
-
-.standup-right-panel {
-	display: none;
-	margin-top: 15px;
-	margin-bottom: 25px;
-	height: 300px;
-	width: 50%;
-	float: right;
-}
-
-.standup-right-panel-overlay {
-	height: 100%;
-	width: 100%;
-	background-color: rgba(255,87,25,0.95);
-	overflow: scroll;
-}
-
-.standup-statistics-table {
-	font-size: 16px;
-	font-family: arial;
-	letter-spacing: 2px;
-	margin-top: 40px;
-	color: white;
-}
-
-.standup-statistics-table span {
-	letter-spacing: 2px;
-	border-bottom: solid 1px white;
-}
-
-.standup-statistics-table li {
-	font-size: 12px;
-	font-family: arial;
-	text-align: left;
-	padding-right: 5px;
-	line-height: 24px;
-	margin-top: 15px;
-}
-
 /*------ Guard-play Section ----- */
+
+
 
 /*-- Guard-passing Section --*/
 
@@ -365,7 +219,6 @@ body {
 
 
 /*----- Dominated Section -----*/
-
 
 .dominated.sub-section-header-container {
 	height: 45px;
