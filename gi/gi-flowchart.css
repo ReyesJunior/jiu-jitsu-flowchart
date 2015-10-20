@@ -2,9 +2,9 @@
 /* Colors used : 
 
 Red: #FF1B2C
-Dark Blue: #023549
-Medium Blue: #0295B7
-Light blue: #0099ED
+Dark Blue: #0044BF
+Medium Blue: #009bff
+Light blue: #00ceff
 
 */
 
@@ -33,7 +33,7 @@ body {
 	height: 60px;
 	width: 100%;
 	top: 0px;
-	background-color: #023549;
+	background-color: #0044BF;
 }
 
 .fixed-header-title {
@@ -120,7 +120,7 @@ body {
 	line-height: 24px; /* 1.5x */
 	text-transform: uppercase;
 	color: white;
-	background-color: #0099ED;
+	background-color: #009bff;
 }
 
 .section-description-paragraph {
@@ -139,7 +139,7 @@ body {
 	width: 280px;
 	margin: 50px auto 5px auto;
 	padding-top: 10px;
-	background-color: #0295B7;
+	background-color: #00ceff;
 }
 
 .sub-section-header {
