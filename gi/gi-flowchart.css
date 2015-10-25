@@ -6,6 +6,9 @@ Dark Blue: #0044BF
 Medium Blue: #009bff
 Light blue: #00ceff
 
+
+
+
 */
 
 
@@ -18,7 +21,7 @@ body {
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
-	background-color: white;
+	background-color: #009bff;
 }
 
 .content-space-divider {
@@ -33,7 +36,7 @@ body {
 	height: 60px;
 	width: 100%;
 	top: 0px;
-	background-color: #0044BF;
+	background-color: white;
 }
 
 .fixed-header-title {
@@ -43,11 +46,11 @@ body {
 }
 
 .gi-flowchart {
-	font-size: 24px;
+	font-size: 28px;
 	margin: 0 auto;
 	padding-top: 16px;
 	text-align: center;
-	color: white;
+	color: #009bff;
 	letter-spacing: 0.1em;
 }
 
@@ -112,24 +115,24 @@ body {
 .section-description-header {
 	height: 70px;
 	width: 100%;
-	margin-top: 0px;
-	font-size: 16px;
+	font-size: 20px;
 	text-align: center;
 	letter-spacing: 8px;
 	padding-top: 24px;
 	line-height: 24px; /* 1.5x */
 	text-transform: uppercase;
-	color: white;
-	background-color: #009bff;
+	color: #009BFF;
+	background-color: white;
 }
 
 .section-description-paragraph {
 	width: 85%;
 	margin: 0 auto;
-	font-size: 16px;
-	line-height: 26px; /* 1.6x */
+	font-size: 14px;
+	letter-spacing: 0.25px;
+	line-height: 22px; /* 1.6x */
 	padding: 5%;
-	color: #023549;
+	color: white;
 }
 
 /* ------ Gi Sub-section (global variables) ------ */
@@ -139,7 +142,7 @@ body {
 	width: 280px;
 	margin: 50px auto 5px auto;
 	padding-top: 10px;
-	background-color: #00ceff;
+	background-color: #8be400;
 }
 
 .sub-section-header {
@@ -148,13 +151,13 @@ body {
 	margin: 5px auto;
 	font-size: 16px;
 	text-transform: uppercase;
-	letter-spacing: 6px;
+	letter-spacing: 2px;
 	color: white;
 	text-align: center;
 }
 
 .sub-section-header-clicked {
-	background-color: #FF1B2C;
+	background-color: #5900e4;
 }
 
 .toggle-scroll-paragraph-button {
@@ -179,7 +182,7 @@ body {
 	width: 90%;
 	margin: 0 auto;
 	padding: 2% 2.5% 5% 2.5%;
-	background-color: #FF1B2C;
+	background-color: #5900e4;
 }
 
 .scroll-sub-section-paragraph {
@@ -188,16 +191,17 @@ body {
 	margin: 5px auto;
 	padding: 2.5%;
 	font-size: 14px;
-	font-family: arial;
-	letter-spacing: 1px;
+	letter-spacing: 0.25px;
+	line-height: 22px; /* 1.6x */
 	color: white;
-	line-height: 32px;
 }
 
 /* ----- Homepage Section ----- */
 
 .homepage.section-description-header {
-	margin-top: 60px;
+	margin: 80px auto 0 auto;
+	color: white;
+	background-color: transparent;
 }
 
 
@@ -214,13 +218,8 @@ body {
 
 /* ------ Guard-passing Section ----- */
 
-.guard-passing.sub-section-header-container {
-	height: 45px;
-}
-
 .guard-passing.sub-section-header {
 	width: 90%;
-	margin: 0 auto;
 }
 
 
@@ -229,13 +228,8 @@ body {
 
 /* ------ Dominated Section ----- */
 
-.dominated.sub-section-header-container {
-	height: 45px;
-}
-
 .dominated.sub-section-header {
 	width: 100%;
-	margin: 0 auto;
 }
 
 
