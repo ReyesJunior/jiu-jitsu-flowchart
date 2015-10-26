@@ -1,8 +1,14 @@
-/* Global Variables */
+
+/* Colors used: 
+
+light blue: #0074BF;
+Dark Blue: #035082
+Purple: #3B0492
+
+*/
 
 body {
-
-	font-family: verdana;
+	font-family: sans-serif;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -10,102 +16,7 @@ body {
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
-	background-color: red;
-}
-
-/* ------ No gi Section configurations (global variables) ------ */
-
-.section-wrapper {
-	width: 100%;
-	margin-top: 0px;
-	overflow: hidden; /* To have parent Div cover all it's children */
-	background-attachment: fixed;
-	background-size: cover;
-}
-
-.section-image-overlay {
-	width: 100%;
-	background: rgba(0,0,0,0.50);
-	overflow: hidden; /* To have parent Div cover all it's children */
-}
-
-.section-description-container {
-	height: 100%;
-	width: 100%;
-	margin: 0 auto;
-	background-color: red;
-}
-
-.section-description-header {
-	height: 70px;
-	width: 100%;
-	margin-top: 0px;
-	font-size: 16px;
-	text-align: center;
-	letter-spacing: 8px;
-	padding-top: 24px;
-	line-height: 24px; /* 1.5x */
-	text-transform: uppercase;
-	color: white;
-	background-color: orange;
-}
-
-.section-description-paragraph, .sub-section-paragraph {
-	width: 85%;
-	margin: 25px auto;
-	font-size: 14px;
-	line-height: 24px; /* 1.7x */
-	padding: 5%;
-	color: white;
-	background-color: green;
-}
-
-.sub-section-header-container {
-	height: 40px;
-	width: 280px;
-	margin: 50px auto 5px auto;
-	padding-top: 10px;
-	background-color: blue;
-}
-
-.sub-section-header {
-	height: 90%;
-	width: 90%;
-	margin: 5px auto;
-	font-size: 16px;
-	text-transform: uppercase;
-	letter-spacing: 6px;
-	color: white;
-	text-align: center;
-}
-
-.sub-section-header-clicked {
-	background-color: teal;
-}
-
-.sub-section-paragraph {
-	background-color: rgba(0,178,182,0.35);
-}
-
-.toggle-scroll-paragraph-button {
-	height: 30px;
-	width: 30px;
-	padding-top: 0px;
-	margin-left: 6px;
-	float: left;
-	background-color: red;
-}
-
-.scroll-sub-section-paragraph {
-	height: 100%;
-	width: 90%;
-	margin: 5px auto;
-	padding: 2.5%;
-	font-size: 14px;
-	font-family: arial;
-	letter-spacing: 1px;
-	color: white;
-	line-height: 32px;
+	background-color: #0074BF;
 }
 
 .content-space-divider {
@@ -113,25 +24,38 @@ body {
 	width: 100%;
 }
 
-
-/* --- Start of Nogi Content --- */
+/* Fixed-Header and Header-title */
 
 .fixed-header {
 	position: fixed;
 	height: 60px;
 	width: 100%;
 	top: 0px;
-	background-color: #eeeeee;
+	background-color: white;
 }
 
-/* - Navigation panel - */
+.fixed-header-title {
+	height: 100%;
+	width: 225px;
+	margin: 0 auto;
+}
+
+.nogi-flowchart {
+	font-size: 28px;
+	margin: 0 auto;
+	padding-top: 16px;
+	text-align: center;
+	color: #0074BF;
+	letter-spacing: 0.1em;
+}
+
+/* Dropdown menu button and container */
 
 .menu-button-container {
 	height: 50px;
 	width: 50px;
 	margin: 5px auto;
 	float: left;
-	background-color: #eeeeee;
 }
 
 .dropdown-menu-button {
@@ -141,8 +65,6 @@ body {
 	background-size: cover;
 }
 
-/* Dropdown menu */
-
 .nogi-dropdown-menu {
 	display: none;
 	position: absolute;
@@ -150,7 +72,7 @@ body {
 	width: 150px;
 	top: 44px;
 	left: 0;
-	background-color: #eeeeee;
+	background-color: #3B0492;
 }
 
 .nogi-dropdown-menu-item {
@@ -162,46 +84,87 @@ body {
 	letter-spacing: 0.1em;
 	text-align: center;
 	list-style: none;
-	background-color: #eeeeee;
+	background-color: #3B0492;
 }
 
 .nogi-dropdown-menu-item a {
-	color: black;
+	color: white;
 	text-decoration: none;
 	text-transform: none;
 }
 
-/* Fixed-Header Title */
+/* ------ No-Gi Section (global variables) ------ */
 
-.fixed-header-title {
-	height: 60px;
-	width: 80%;
-	margin: 0 auto 0 60px;
+.section-wrapper {
+	width: 100%;
+	margin-top: 0px;
+	overflow: hidden; /* To have parent Div cover all it's children */
 }
 
-.nogi-flowchart {
-	height: 45px;
-	font-size: 24px;
+.section-description-container {
+	height: 100%;
+	width: 100%;
 	margin: 0 auto;
-	padding-top: 15px;
+}
+
+.section-description-header {
+	height: 70px;
+	width: 100%;
+	font-size: 20px;
 	text-align: center;
-	color: black;
-	letter-spacing: 0.1em;
-	background-color: #eeeeee;
+	letter-spacing: 8px;
+	padding-top: 24px;
+	line-height: 24px; /* 1.5x */
+	text-transform: uppercase;
+	color: #0074BF;
+	background-color: white;
 }
 
-/* ----- No Gi Homepage Content ----- */
-
-.homepage.section-wrapper {
-	margin-top: 60px;
-	background-image: url('https://torontonogi.files.wordpress.com/2014/10/cropped-dsc0384.jpg');
+.section-description-paragraph {
+	width: 85%;
+	margin: 0 auto;
+	font-size: 14px;
+	letter-spacing: 0.25px;
+	line-height: 22px; /* 1.6x */
+	padding: 5%;
+	color: white;
 }
 
-.homepage.section-description-header {
-	background-color: teal;
+/* ------ No-Gi Sub-section (global variables) ------ */
+
+.sub-section-header-container {
+	height: 40px;
+	width: 280px;
+	margin: 50px auto 5px auto;
+	padding-top: 10px;
+	background-color: #035082;
 }
 
-/* Nogi content sliders */
+.sub-section-header {
+	height: 90%;
+	width: 90%;
+	margin: 5px auto;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: white;
+	text-align: center;
+}
+
+.sub-section-header-clicked {
+	background-color: #3B0492;
+}
+
+.toggle-scroll-paragraph-button {
+	height: 25px;
+	width: 25px;
+	margin-left: 5px;
+	margin-top: 2px;
+	float: left;
+	background-color: white;
+}
+
+/* ------ Slider Content (global variables) ------ */
 
 .slider-wrapper {
 	display: none;
@@ -214,226 +177,55 @@ body {
 	width: 90%;
 	margin: 0 auto;
 	padding: 2% 2.5% 5% 2.5%;
-	background-color: rgba(255,87,25,0.95);
+	background-color: #3B0492;
 }
 
-/* ------ No Gi Stand-up Section ------ */
-
-.stand-up.section-wrapper {
-	background-image: url('http://www.graciemag.com/en/wp-content/uploads/2014/04/1979262_854901214525212_4940845710231558134_o.jpg'); 
-	background-position: 10% 30%;
+.scroll-sub-section-paragraph {
+	height: 100%;
+	width: 90%;
+	margin: 5px auto;
+	padding: 2.5%;
+	font-size: 14px;
+	letter-spacing: 0.25px;
+	line-height: 22px; /* 1.6x */
+	color: white;
 }
 
-.stand-up-control-section {
-	width: 100%;
-	margin: 25px auto;
+/* ----- Homepage Section ----- */
+
+.homepage.section-description-header {
+	margin: 80px auto 0 auto;
+	color: white;
+	background-color: transparent;
 }
+
+
+/* ------ Stand-up Section ------ */
 
 .clinch-control.sub-section-header {
 	height: 90%;
-	width: 90%;
-	margin: -4px auto 0 auto;
-}
-
-/* stand-up slider menu */
-
-.slider-menu-wrapper {
-	height: 40px;
-	width: 100%;
-	margin: 25px auto;
-}
-
-/* sidenotes button */
-
-.sidenotes-slider-button {
-	height: 40px;
-	width: 125px;
-	float: left;
-	background-color: #00b2b6;
-}
-
-.sidenotes-slider-button-text {
-	height: 100%;
-	width: 100%;
-	margin-top: 0px;
-	font-size: 14px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding: 4px 8px 0 0;
-	color: white;
-}
-
-/* Stats Button */
-
-.stats-slider-button {
-	height: 40px;
-	width: 125px;
-	float: right;
-	background-color: #00b2b6;
-}
-
-.stats-slider-button-text {
-	height: 100%;
-	width: 100%;
-	margin-top: 0px;
-	font-size: 14px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding: 4px 8px 0 0;
-	color: white;
-}
-
-.standup-slider-clicked {
-	background-color: #FF5719;
-}
-
-/* Stand-up slider panels Container */
-
-.standup-section-panels-container {
 	width: 100%;
 }
 
-/* - Left Panel - */
+/* ------ Guard-play Section ----- */
 
-.standup-sidenote-panel {
-	display: none;
-	margin-top: 15px;
-	margin-bottom: 25px;
-	height: 300px;
-	width: 50%;
-	float: left;
-}
 
-.standup-sidenote-overlay {
-	height: 100%;
-	width: 100%;
-	background-color: rgba(255,87,25,0.95);
-	overflow: scroll;
-}
 
-.standup-sidenote {
-	font-size: 14px;
-	font-family: arial;
-	letter-spacing: 2px;
-	margin-top: 40px;
-	color: white;
-}
-
-.standup-sidenote span {
-	padding-bottom: 2px;
-	border-bottom: solid 1px white;
-}
-
-.sidenote-item {
-	font-size: 14px;
-	font-family: arial;
-	text-align: left;
-	padding-right: 5px;
-	line-height: 24px;
-	margin-top: 15px;
-}
-
-/* - Right Panel - */
-
-.standup-right-panel {
-	display: none;
-	margin-top: 15px;
-	margin-bottom: 25px;
-	height: 300px;
-	width: 50%;
-	float: right;
-}
-
-.standup-right-panel-overlay {
-	height: 100%;
-	width: 100%;
-	background-color: rgba(255,87,25,0.95);
-	overflow: scroll;
-}
-
-.standup-statistics-table {
-	font-size: 16px;
-	font-family: arial;
-	letter-spacing: 2px;
-	margin-top: 40px;
-	color: white;
-}
-
-.standup-statistics-table span {
-	letter-spacing: 2px;
-	border-bottom: solid 1px white;
-}
-
-.standup-statistics-table li {
-	font-size: 12px;
-	font-family: arial;
-	text-align: left;
-	padding-right: 5px;
-	line-height: 24px;
-	margin-top: 15px;
-}
-
-/*------ Guard-play Section ----- */
-
-.guard-play.section-wrapper {
-	background-image: url('http://www.phase3.biz/core/uploads/JJP/photos/Deep%20half%20to%20xguard%20nogi.jpg');
-}
-
-/*-- Guard-passing Section --*/
-
-.guard-passing.section-wrapper {
-	background-image: url('http://www.grapplearts.com/wp-content/uploads/2013/04/Guard-sweeps-The-Easiest-Sweep-from-Butterfly.png');
-}
-
-.guard-passing.sub-section-header-container {
-	height: 45px;
-}
+/* ------ Guard-passing Section ----- */
 
 .guard-passing.sub-section-header {
 	width: 90%;
-	margin: 0 auto;
 }
 
 
-/*----- Dominating Section ------*/
+/* ------ Dominating Section ----- */
 
-.dominating.section-wrapper {
-	background-image: url('http://4.bp.blogspot.com/-1HBaNN6TRY4/UhWTuJ5GdMI/AAAAAAAAAM8/Ll-H64c-or8/s1600/No-Gi-World-Champs-2009-3.jpg');
-	background-position: 20%, 50%;
-}
 
-/*----- Dominated Section -----*/
-
-.dominated.section-wrapper {
-
-}
-
-.dominated.sub-section-header-container {
-	height: 45px;
-}
+/* ------ Dominated Section ----- */
 
 .dominated.sub-section-header {
-	margin: 0 auto;
+	width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
