@@ -21,7 +21,7 @@ body {
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
-	background-color: #009bff;
+	background-color: #0074BF;
 }
 
 .content-space-divider {
@@ -50,7 +50,7 @@ body {
 	margin: 0 auto;
 	padding-top: 16px;
 	text-align: center;
-	color: #009bff;
+	color: #0074BF;
 	letter-spacing: 0.1em;
 }
 
@@ -77,7 +77,7 @@ body {
 	width: 150px;
 	top: 44px;
 	left: 0;
-	background-color: #FF1B2C;
+	background-color: #3B0492;
 }
 
 .gi-dropdown-menu-item {
@@ -89,7 +89,7 @@ body {
 	letter-spacing: 0.1em;
 	text-align: center;
 	list-style: none;
-	background-color: #FF1B2C;
+	background-color: #3B0492;
 }
 
 .gi-dropdown-menu-item a {
@@ -121,7 +121,7 @@ body {
 	padding-top: 24px;
 	line-height: 24px; /* 1.5x */
 	text-transform: uppercase;
-	color: #009BFF;
+	color: #0074BF;
 	background-color: white;
 }
 
@@ -142,7 +142,7 @@ body {
 	width: 280px;
 	margin: 50px auto 5px auto;
 	padding-top: 10px;
-	background-color: #8be400;
+	background-color: #035082;
 }
 
 .sub-section-header {
@@ -157,7 +157,7 @@ body {
 }
 
 .sub-section-header-clicked {
-	background-color: #5900e4;
+	background-color: #3B0492;
 }
 
 .toggle-scroll-paragraph-button {
@@ -182,7 +182,7 @@ body {
 	width: 90%;
 	margin: 0 auto;
 	padding: 2% 2.5% 5% 2.5%;
-	background-color: #5900e4;
+	background-color: #3B0492;
 }
 
 .scroll-sub-section-paragraph {
