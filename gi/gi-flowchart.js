@@ -1,15 +1,21 @@
 $(document).ready(function () {
 
 
-// Toggle SlideDown/Slideup Menu 
+// Toggle SlideDown/Slideup Menu when dropdown-menu-button
   $('.dropdown-menu-button').click( function() {
     $('.gi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
     });
   });
 
 
+// Toggle SlideDOwn/Slideup Menu when gi-dropdown-menu-item is clicked
+  $('.gi-dropdown-menu-item').click( function() {
+    $('.gi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
+    });
+  });
+
+
 // Toggle Slider Menus
-// Need to figure out data attribute to make it cleaner!
    $('.js-section-header').click( function() {
       $(this).toggleClass( 'sub-section-header-clicked' );
 
@@ -17,18 +23,5 @@ $(document).ready(function () {
       $('.slider-wrapper[data-id="' + target + '"]').slideToggle('display');
   });
 
-
-// Stand-up Left Panel slide 
-  $('.sidenotes-slider-button').click(function () {
-    $( this ).toggleClass( 'standup-slider-clicked' );
-    $('.standup-sidenote-panel').animate({width: 'toggle'}, 500);
-  });
-
-
-// Stand-up Right Panel slide 
-  $('.stats-slider-button').click(function () {
-    $( this ).toggleClass( 'standup-slider-clicked' )
-    $('.standup-right-panel').animate({width: 'toggle'}, 500);
-  });
 
 });
