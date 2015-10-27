@@ -162,7 +162,22 @@ body {
 	margin-left: 5px;
 	margin-top: 2px;
 	float: left;
-	background-color: white;
+	background-image: url(http://www.hub88workspace.com/img/arrow_down.png);
+	background-size: contain;
+}
+
+.rotate {
+	/* Safari */
+	-webkit-transform: rotate(-180deg);
+
+	/* Firefox */
+	-moz-transform: rotate(-180deg);
+
+	/* IE */
+	-ms-transform: rotate(-180deg);
+
+	/* Opera */
+	-o-transform: rotate(-180deg);
 }
 
 /* ------ Slider Content (global variables) ------ */
