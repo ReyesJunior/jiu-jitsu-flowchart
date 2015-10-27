@@ -7,6 +7,11 @@ $(document).ready(function () {
     });
 	});
 
+// Toggle SlideDown/Slideup Menu when gi-dropdown-menu-item is clicked
+  $('.nogi-dropdown-menu-item').click( function() {
+    $('.nogi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
+    });
+  });
 
 // Toggle Slider Menus and Slider Menus icon when js-section-header is clicked
    $('.js-section-header').click( function() {
