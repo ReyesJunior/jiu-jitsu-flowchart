@@ -8,29 +8,14 @@ $(document).ready(function () {
 	});
 
 
-// Toggle Slider Menus
-// Need to figure out data attribute to make it cleaner!
+// Toggle Slider Menus and Slider Menus icon when js-section-header is clicked
    $('.js-section-header').click( function() {
-  		$(this).toggleClass( 'sub-section-header-clicked' );
+      $(this).toggleClass('sub-section-header-clicked');
 
     var target = $( this ).data('target');
       $('.slider-wrapper[data-id="' + target + '"]').slideToggle('display');
+      $('.toggle-scroll-paragraph-button[data-rotate="' + target + '"]').toggleClass('rotate');   
   });
-
-
-// Stand-up Left Panel slide 
-  $('.sidenotes-slider-button').click(function () {
-    $( this ).toggleClass( 'standup-slider-clicked' );
-    $('.standup-sidenote-panel').animate({width: 'toggle'}, 500);
-  });
-
-
-// Stand-up Right Panel slide 
-  $('.stats-slider-button').click(function () {
-    $( this ).toggleClass( 'standup-slider-clicked' )
-    $('.standup-right-panel').animate({width: 'toggle'}, 500);
-  });
-
 
 
 
