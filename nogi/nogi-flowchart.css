@@ -1,9 +1,9 @@
 
 /* Colors used: 
 
-light blue: #0074BF;
-Dark Blue: #035082
-Purple: #3B0492
+light teal: #02ADBF;
+Dark teal: #02707B
+Purple: #5204CE
 
 */
 
@@ -16,7 +16,7 @@ body {
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
-	background-color: #0074BF;
+	background-color: #02ADBF;
 }
 
 .content-space-divider {
@@ -45,7 +45,7 @@ body {
 	margin: 0 auto;
 	padding-top: 16px;
 	text-align: center;
-	color: #0074BF;
+	color: #02ADBF;
 	letter-spacing: 0.1em;
 }
 
@@ -72,7 +72,7 @@ body {
 	width: 150px;
 	top: 44px;
 	left: 0;
-	background-color: #3B0492;
+	background-color: #5204CE;
 }
 
 .nogi-dropdown-menu-item {
@@ -84,7 +84,7 @@ body {
 	letter-spacing: 0.1em;
 	text-align: center;
 	list-style: none;
-	background-color: #3B0492;
+	background-color: #5204CE;
 }
 
 .nogi-dropdown-menu-item a {
@@ -116,7 +116,7 @@ body {
 	padding-top: 24px;
 	line-height: 24px; /* 1.5x */
 	text-transform: uppercase;
-	color: #0074BF;
+	color: #02ADBF;
 	background-color: white;
 }
 
@@ -137,7 +137,7 @@ body {
 	width: 280px;
 	margin: 50px auto 5px auto;
 	padding-top: 10px;
-	background-color: #035082;
+	background-color: #02707B;
 }
 
 .sub-section-header {
@@ -152,7 +152,7 @@ body {
 }
 
 .sub-section-header-clicked {
-	background-color: #3B0492;
+	background-color: #5204CE;
 }
 
 .toggle-scroll-paragraph-button {
@@ -177,7 +177,7 @@ body {
 	width: 90%;
 	margin: 0 auto;
 	padding: 2% 2.5% 5% 2.5%;
-	background-color: #3B0492;
+	background-color: #5204CE;
 }
 
 .scroll-sub-section-paragraph {
