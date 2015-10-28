@@ -30,6 +30,12 @@ body {
 	width: 100%;
 }
 
+/* hidden content (Saved for larger viewports) */
+
+.scroll-sub-section-paragraph-500px {
+	display: none;
+}
+
 /* Fixed-Header and Header-title */
 
 .fixed-header {
@@ -198,7 +204,7 @@ body {
 	background-color: #3B0492;
 }
 
-.scroll-sub-section-paragraph {
+.scroll-sub-section-paragraph, .scroll-sub-section-paragraph-500px {
 	height: 100%;
 	width: 90%;
 	margin: 5px auto;
@@ -292,7 +298,7 @@ body {
 				padding: 2.5% 0% 5% 0%;
 			}
 
-			.scroll-sub-section-paragraph {
+			.scroll-sub-section-paragraph, .scroll-sub-section-paragraph-500px {
 				width: 75%;
 				font-size: 15px;
 				line-height: 24px; /* 1.6x */
@@ -301,6 +307,10 @@ body {
 
 			.media-query-content-space-divider {
 				height: 95px;
+			}
+
+			.scroll-sub-section-paragraph-500px {
+				display: block;
 			}
 
 
@@ -329,7 +339,7 @@ body {
 					width: 75%;
 				}
 
-				.scroll-sub-section-paragraph {
+				.scroll-sub-section-paragraph, .scroll-sub-section-paragraph-500px {
 					width: 75%;
 					padding: 2.5% 0;
 				}
