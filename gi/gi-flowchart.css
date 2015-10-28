@@ -36,6 +36,10 @@ body {
 	display: none;
 }
 
+.section-description-paragraph {
+	display: none;
+}
+
 /* Fixed-Header and Header-title */
 
 .fixed-header {
@@ -132,7 +136,7 @@ body {
 	background-color: white;
 }
 
-.section-description-paragraph {
+.section-description-paragraph, .section-description-paragraph-500px {
 	width: 85%;
 	margin: 0 auto;
 	font-size: 14px;
@@ -282,7 +286,7 @@ body {
 				line-height: 30px; /* x1.4 */
 			}
 
-			.section-description-paragraph {
+			.section-description-paragraph, .section-description-paragraph-500px {
 				width: 75%;
 				font-size: 15px;
 				line-height: 24px; /* 1.6x */
