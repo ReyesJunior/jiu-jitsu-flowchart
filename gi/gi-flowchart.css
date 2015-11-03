@@ -107,13 +107,7 @@ body {
 	overflow: hidden; /* To have parent Div cover all it's children */
 }
 
-.section-description-container {
-	height: 100%;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.section-description-header {
+.section-header {
 	height: 70px;
 	width: 100%;
 	font-size: 20px;
@@ -126,12 +120,17 @@ body {
 	background-color: white;
 }
 
-.section-description-paragraph, .section-description-paragraph-500px {
+.section-description-container {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.section-description-paragraph {
 	width: 85%;
 	margin: 0 auto;
 	font-size: 14px;
-	letter-spacing: 0.25px;
-	line-height: 22px; /* 1.6x */
+	line-height: 20px; /* 1.4x */
 	padding: 5%;
 	color: white;
 }
@@ -198,21 +197,20 @@ body {
 	background-color: #3B0492;
 }
 
-.scroll-sub-section-paragraph, .scroll-sub-section-paragraph-500px {
+.scroll-sub-section-paragraph {
 	height: 100%;
 	width: 90%;
 	margin: 5px auto;
 	padding: 5%;
 	font-size: 14px;
-	letter-spacing: 0.25px;
-	line-height: 22px; /* 1.6x */
+	line-height: 20px; /* 1.4x */
 	color: white;
 }
 
 /* ----- Homepage Section ----- */
 
-.homepage.section-description-header {
-	margin: 80px auto 0 auto;
+.homepage.section-header {
+	margin: 70px auto 0 auto;
 	color: white;
 	background-color: transparent;
 }
@@ -233,11 +231,11 @@ body {
 
 	@media (min-width: 350px) {
 
-		.homepage.section-description-header {
-			margin-top: 100px;
+		.homepage.section-header {
+			margin-top: 75px;
 		}
 
-		.section-description-header {
+		.section-header {
 			padding-top: 20px;
 			padding-bottom: 8px;
 			font-size: 22px;
@@ -246,6 +244,7 @@ body {
 
 		.section-description-paragraph {
 			width: 80%;
+			line-height: 22px;
 		}
 
 		.sub-section-header-container {
@@ -266,25 +265,28 @@ body {
 			height: 65px;
 		}
 
-		} /*-- End of Media Query >355px --*/
+	} /*-- End of Media Query >355px --*/
 
 
 		@media (min-width: 500px) {
 
-			.section-description-header {
+			.homepage.section-header {
+				margin-top: 80px;
+			}
+
+			.section-header {
 				font-size: 24px;
-				line-height: 30px; /* x1.4 */
+				line-height: 30px; /* 1.4x */
 			}
 
 			.section-description-paragraph {
 				width: 75%;
 				font-size: 15px;
-				line-height: 24px; /* 1.6x */
-				padding: 5% 0 2.5% 0;
+				line-height: 23px; /* 1.5x */
 			}
 
 			.sub-section-header-container {
-				margin-top: 75px;
+				margin-top: 80px;
 			}
 
 			.slider-content-container {
@@ -304,33 +306,35 @@ body {
 			}
 
 
-			} /*-- End of Media Query >500px --*/
+		} /*-- End of Media Query >500px --*/
 
 
-				@media (min-width: 700px) {
+			@media (min-width: 650px) {
 
-				.section-description-header {
+				.homepage.section-header {
+					margin-top: 85px;
+				}
+
+				.section-header {
 					padding-bottom: 24px;
 					font-size: 26px;
 					line-height: 36px; /* x1.4 */
 				}
 
 				.section-description-paragraph {
-					font-size: 16px;
-					line-height: 25px; /* 1.6x */
-					padding: 3% 0;
+					width: 70%;
 				}
 
 				.sub-section-header-container {
-					margin-top: 90px;
+					margin-top: 95px;
 				}
 
 				.slider-content-container {
-					width: 75%;
+					width: 65%;
 				}
 
 				.scroll-sub-section-paragraph {
-					width: 75%;
+					width: 65%;
 					padding: 2.5% 0;
 				}
 
@@ -338,26 +342,96 @@ body {
 					height: 125px;
 				}
 
-				} /*-- End of Media Query >700px --*/
+			} /*-- End of Media Query >650px --*/
 
 
-					@media (min-width: 900px) {
+				@media (min-width: 800px) {
 
-					.section-description-header {
-						padding-bottom: 24px;
-						font-size: 26px;
-						line-height: 36px; /* x1.4 */
+					.section-header {
+						padding-bottom: 28px;
+						font-size: 28px;
+						line-height: 39px; /* x1.4 */
+					}
+
+					.section-description-paragraph {
+						width: 65%;
+						font-size: 16px;
+						line-height: 24px; /* 1.5x */
+						padding: 3% 0;
 					}
 
 					.slider-content-container {
 						width: 675px;
 					}
 
+					.scroll-sub-section-paragraph {
+						font-size: 16px;
+						line-height: 25px; /* 1.4x */
+					}
+
 					.media-query-content-space-divider {
 						height: 155px;
 					}
 
-					} /*-- End of Media Query >900px --*/
+				} /*-- End of Media Query >800px --*/
+
+
+					@media (min-width: 1050px) {
+
+						.main-content {
+							width: 45%;
+							float: left;
+							padding-bottom: 10%;
+							padding-left: 5%;
+							padding-top: 5%;
+							text-align: justify;
+						}
+
+						.aside-content {
+							width: 50%;
+							float: right;
+							padding-top: 5%;
+							padding-bottom: 2%;
+						}
+
+						.homepage.main-content, .homepage.aside-content {
+							padding-top: 0%;
+						}
+						
+						.homepage.section-header {
+							margin-top: 80px;
+						}
+
+						.section-header {
+							font-size: 24px;
+							line-height: 30px; /* 1.4x */
+						}
+
+						.section-description-paragraph {
+							width: 90%;
+							font-size: 15px;
+							line-height: 23px; /* 1.5x */
+						}
+
+						.sub-section-header-container {
+							margin-top: 20px;
+						}
+
+						.slider-content-container {
+							width: 95%;
+							padding: 2.5% 0%;
+						}
+
+						.scroll-sub-section-paragraph {
+							width: 90%;
+							font-size: 14px;
+							line-height: 22px; /* 1.6x */
+							padding: 2.5% 0;
+						}
+
+										
+
+					} /*-- End of Media Query >1050px --*/
 
 
 
