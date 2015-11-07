@@ -122,12 +122,12 @@ body {
 
 .section-description-container {
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 }
 
 .section-description-paragraph {
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 	font-size: 14px;
 	line-height: 20px; /* 1.4x */
