@@ -25,6 +25,14 @@ $(document).ready(function () {
 
   */
 
+//For Toggling Tap Text cards 
+
+$('.toggle-read-text').toggle(function() {
+  $(this).text('Read Less').siblings('.complete-text').show();
+}, function () {
+  $(this).text('Read More').siblings('.complete-text').hide();
+});
+
 // For paired media Query > 1050px
 
 if (screen.width >=1050) {
