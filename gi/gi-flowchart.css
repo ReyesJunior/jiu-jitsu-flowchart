@@ -214,6 +214,18 @@ body {
 	color: white;
 }
 
+/* Toggle Tap cards */
+
+.complete-text {
+	display: none;
+}
+
+.toggle-read-text {
+	background-color: red;
+	font-size: 12px;
+	padding: 5px;
+	color: white;
+}
 /* ----- Homepage Section ----- */
 
 .homepage.section-header {
