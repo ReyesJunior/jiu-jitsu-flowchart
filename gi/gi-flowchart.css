@@ -189,17 +189,24 @@ body {
 	margin: 0px auto;
 }
 
+.dropdown-slider-panel {
+	height: 600px;
+	width: 95%;
+	background-color: green;
+	margin: 0 auto;
+}	
+
 .slider-content-container {
 	height: 100%;
 	width: 90%;
+	padding: 5%;
 	margin: 0 auto;
-	padding: 2% 2.5% 5% 2.5%;
 	background-color: #3B0492;
 }
 
 .scroll-sub-section-paragraph {
 	height: 100%;
-	width: 90%;
+	width: 100%;
 	margin: 5px auto;
 	padding: 5%;
 	font-size: 14px;
@@ -428,8 +435,6 @@ body {
 							line-height: 22px; /* 1.6x */
 							padding: 2.5% 0;
 						}
-
-										
 
 					} /*-- End of Media Query >1050px --*/
 
