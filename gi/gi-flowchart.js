@@ -45,7 +45,7 @@ $('.toggle-read-text').toggle(function() {
           $('.slider-wrapper[data-id="' + target + '"]').hide();
           $this.removeClass('sub-section-header-clicked');
           // remove all other 'sub-section-header-clicked' classes  *********** 
-            $('.js-section-header').not$this.removeClass('sub-section-header-clicked');
+          $('.js-section-header').not$this.removeClass('sub-section-header-clicked');
       }
       // if this is the first time js-section-header is clicked:
         else {
@@ -57,6 +57,31 @@ $('.toggle-read-text').toggle(function() {
             $('.slider-wrapper[data-id="' + target + '"]').slideToggle('display');
         }
  });
+
+// On window resize > 800px, move 'Read More/Read Less' button to 2nd paragraph
+  $(window).resize(function(){
+     var width = $(window).width();
+     if(width >= 800){
+         $('.section-description-paragraph:nth-child(2)').removeClass('complete-text');
+     }
+     else{
+         $('.section-description-paragraph:nth-child(2)').addClass('complete-text');
+     }
+  })
+  .resize();//trigger the resize event on page load
+  // On window resize > 1050px, move 'Read More/Read Less' button to 3rd paragraph and hide it
+    $(window).resize(function(){
+       var width = $(window).width();
+       if(width >= 1050){
+           $('.section-description-paragraph:nth-child(3)').removeClass('complete-text');
+           $('.toggle-read-text').hide();
+       }
+       else{
+           $('.section-description-paragraph:nth-child(3)').addClass('complete-text');
+           $('.toggle-read-text').show();
+       }
+    })
+    .resize();//trigger the resize event on page load.
 
 
 }); // End of Doc.ready line
