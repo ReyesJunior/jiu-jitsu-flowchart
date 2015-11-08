@@ -415,7 +415,7 @@ body {
 							width: 50%;
 							float: right;
 							padding-top: 5%;
-							padding-bottom: 2%;
+							padding-bottom: 5%;
 						}
 
 						.homepage.main-content, .homepage.aside-content {
@@ -432,13 +432,13 @@ body {
 						}
 
 						.section-description-paragraph {
-							width: 90%;
+							width: 100%;
 							font-size: 15px;
 							line-height: 23px; /* 1.5x */
 						}
 
-						.sub-section-header-container {
-							margin-top: 20px;
+						.first.sub-section-header-container {
+							margin-top: 15px;
 						}
 
 						.slider-content-container {
@@ -454,6 +454,31 @@ body {
 						}
 
 					} /*-- End of Media Query >1050px --*/
+
+						@media (min-width: 1150px) {
+
+							.main-content {
+							width: 45%;
+							float: left;
+							padding-bottom: 10%;
+							padding-left: 5%;
+							padding-top: 5%;
+							text-align: justify;
+							}
+
+							.aside-content {
+								width: 50%;
+								float: right;
+								padding-top: 5%;
+								padding-bottom: 5%;
+							}
+
+							.sub-section-header-container {
+								display: inline-block;
+								margin: 5px 0;
+							}
+
+						} /*-- End of Media Query >1050px --*/
 
 
 
