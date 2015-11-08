@@ -228,7 +228,10 @@ body {
 	font-size: 12px;
 	padding: 5px;
 	color: white;
+	width: 60px;
+	margin: 5px auto;
 }
+
 /* ----- Homepage Section ----- */
 
 .homepage.section-header {
