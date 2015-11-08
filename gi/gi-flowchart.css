@@ -137,10 +137,14 @@ body {
 
 /* ------ Gi Sub-section (global variables) ------ */
 
+.first.sub-section-header-container {
+	margin-top: 50px;
+}
+
 .sub-section-header-container {
 	height: 40px;
-	width: 280px;
-	margin: 50px auto 5px auto;
+	width: 275px;
+	margin: 5px auto;
 	padding-top: 10px;
 	background-color: #035082;
 }
@@ -190,7 +194,6 @@ body {
 }
 
 .dropdown-slider-panel {
-	height: 600px;
 	width: 95%;
 	background-color: green;
 	margin: 0 auto;
@@ -221,7 +224,7 @@ body {
 }
 
 .toggle-read-text {
-	background-color: red;
+	background-color: #FF1450;
 	font-size: 12px;
 	padding: 5px;
 	color: white;
@@ -266,8 +269,8 @@ body {
 			line-height: 22px;
 		}
 
-		.sub-section-header-container {
-			margin-top: 65px;
+		.homepage.sub-section-header-container {
+			margin-top: 85px;
 		}
 
 		.slider-content-container {
@@ -304,7 +307,7 @@ body {
 				line-height: 23px; /* 1.5x */
 			}
 
-			.sub-section-header-container {
+			.homepage.sub-section-header-container {
 				margin-top: 80px;
 			}
 
