@@ -20,7 +20,7 @@ $('.toggle-read-text').toggle(function() {
 
   $this.text('Read Less').siblings('.complete-text').slideToggle();
   }, function () {
-    $this.text('Read More').siblings('.complete-text').slideToggle();
+    $(this).text('Read More').siblings('.complete-text').slideToggle();
 });
 
 // limit toggle of scroll-sub-section-paragraphs so only 1 can be active at a time
