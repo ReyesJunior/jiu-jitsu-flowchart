@@ -403,7 +403,7 @@ body {
 					@media (min-width: 1050px) {
 
 						.main-content {
-							width: 45%;
+							width: 55%;
 							float: left;
 							padding-bottom: 10%;
 							padding-left: 5%;
@@ -412,33 +412,45 @@ body {
 						}
 
 						.aside-content {
-							width: 50%;
-							float: right;
+							width: 40%;
+							float: left;
 							padding-top: 5%;
 							padding-bottom: 5%;
 						}
 
-						.homepage.main-content, .homepage.aside-content {
+						.homepage.main-content {
 							padding-top: 0%;
 						}
 
 						.homepage.section-header {
-							margin-top: 80px;
+							margin-top: 120px;
+							background-color: white;
+							color: #0074BF;
 						}
 
 						.section-header {
+							width: 90%;
+							margin: 0 auto;
+							padding-bottom: 18px;
 							font-size: 24px;
 							line-height: 30px; /* 1.4x */
 						}
 
 						.section-description-paragraph {
 							width: 100%;
-							font-size: 15px;
-							line-height: 23px; /* 1.5x */
+							padding: 2.5% 0;
 						}
 
-						.first.sub-section-header-container {
-							margin-top: 15px;
+						.teaser-text {
+							margin-top: 25px;
+						}
+
+						.first.movement.sub-section-header-container {
+							margin-top: 65px;
+						}
+
+						.first.sub-section-header-container, .sub-section-header-container {
+							margin-top: 0px;
 						}
 
 						.slider-content-container {
@@ -447,7 +459,7 @@ body {
 						}
 
 						.scroll-sub-section-paragraph {
-							width: 90%;
+							width: 95%;
 							font-size: 14px;
 							line-height: 22px; /* 1.6x */
 							padding: 2.5% 0;
@@ -458,12 +470,11 @@ body {
 						@media (min-width: 1150px) {
 
 							.main-content {
-							width: 45%;
-							float: left;
-							padding-bottom: 10%;
-							padding-left: 5%;
-							padding-top: 5%;
-							text-align: justify;
+								width: 45%;
+								float: left;
+								padding-bottom: 10%;
+								padding-left: 5%;
+								padding-top: 5%;
 							}
 
 							.aside-content {
@@ -473,9 +484,17 @@ body {
 								padding-bottom: 5%;
 							}
 
+							.teaser-text {
+								margin-top: 15px;
+							}
+
+							.first.sub-section-header-container {
+								margin-top: 0px;
+							}
+
 							.sub-section-header-container {
 								display: inline-block;
-								margin: 5px 0;
+								margin-top: 0px;
 							}
 
 						} /*-- End of Media Query >1050px --*/
