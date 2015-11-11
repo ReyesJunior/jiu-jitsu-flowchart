@@ -30,6 +30,12 @@ body {
 	width: 100%;
 }
 
+/* Altenate Menu */
+
+.alternate-fixed-header-title, .alternate.gi-menu, .alternate.gi-menu-item, .alternate.gi-menu-item a {
+	display: none;
+}
+
 /* Fixed-Header and Header-title */
 
 .fixed-header {
@@ -42,17 +48,21 @@ body {
 
 .fixed-header-title {
 	height: 100%;
-	width: 225px;
+	width: 75%;
 	margin: 0 auto;
 }
 
-.gi-flowchart {
+.gi-flowchart, .gi-flowchart-2 {
 	font-size: 28px;
 	margin: 0 auto;
 	padding-top: 16px;
 	text-align: center;
 	color: #0074BF;
 	letter-spacing: 0.1em;
+}
+
+.gi-flowchart-2 {
+	display: none;
 }
 
 /* Dropdown menu button and container */
@@ -74,17 +84,20 @@ body {
 .gi-dropdown-menu {
 	display: none;
 	position: absolute;
-	height: 350px;
-	width: 150px;
+	height: 320px;
+	width: 175px;
 	top: 44px;
 	left: 0;
 	background-color: #3B0492;
 }
 
 .gi-dropdown-menu-item {
-	height: 35px;
+	position: relative;
+	height: 30px;
 	width: 170px;
-	margin: 2px auto 0 -30px;
+	margin-top: 2px;
+	margin-left: -20px;
+	left: 0px;
 	padding-top: 12px;
 	font-size: 16px;
 	letter-spacing: 0.1em;
@@ -294,6 +307,20 @@ body {
 
 		@media (min-width: 500px) {
 
+			.gi-flowchart {
+				display: none;
+			}
+
+			.gi-flowchart-2 {
+				display: block
+			}
+
+			.alternate.gi-flowchart {
+				font-size: 18px;
+				color: black;
+				padding-top: 14px;
+			}
+
 			.homepage.section-header {
 				margin-top: 80px;
 			}
@@ -371,6 +398,55 @@ body {
 
 				@media (min-width: 800px) {
 
+					.menu-button-container {
+						display: none;
+					}
+
+					.fixed-header-title {
+						display: inline-block;
+						height: 100%;
+						width: 11%;
+						float: left;
+						background-color: white;
+					}
+
+					.gi-flowchart-2 {
+						display: none;
+					}
+
+					.gi-flowchart {
+						display: block;
+						font-size: 20px;
+						color: #0074BF;
+						padding-top: 18px;
+					}
+
+					.alternate.gi-menu {
+						display: block;
+						height: 100%;
+						width: 100%;
+						margin-top: 0;
+						background-color: #3B0492;
+					}
+
+					.alternate.gi-menu-item {
+						display: block;
+						float: left;
+						padding-top: 20px;
+						padding-left: 3%;
+						font-size: 14px;
+						text-align: center;
+						list-style: none;
+						background-color: #3B0492;
+					}
+
+					.alternate.gi-menu-item a {
+						display: inline-block;
+						color: white;
+						text-decoration: none;
+						text-transform: none;
+					}
+
 					.section-header {
 						padding-bottom: 28px;
 						font-size: 28px;
@@ -402,11 +478,33 @@ body {
 
 					@media (min-width: 1050px) {
 
+						.menu-button-container,.gi-dropdown-menu, .gi-dropdown-menu-item, .gi-dropdown-menu-item a {
+							display: none;
+						}
+
+						.fixed-header-title {
+							width: 12%;
+						}
+
+						.gi-flowchart {
+							display: block;
+							font-size: 24px;
+							color: #0074BF;
+							padding-top: 18px;
+						}
+
+						/* Altenate Fixed-header & Menu */
+
+						.alternate.gi-menu-item {
+							font-size: 16px;
+							padding-left: 3.5%;
+						}
+
 						.main-content {
 							width: 55%;
 							float: left;
 							padding-bottom: 10%;
-							padding-left: 5%;
+							padding-left: 2.5%;
 							padding-top: 5%;
 							text-align: justify;
 						}
@@ -418,12 +516,11 @@ body {
 							padding-bottom: 5%;
 						}
 
-						.homepage.main-content {
+						.homepage.main-content, .homepage.aside-content {
 							padding-top: 0%;
 						}
 
 						.homepage.section-header {
-							margin-top: 120px;
 							background-color: white;
 							color: #0074BF;
 						}
@@ -445,8 +542,13 @@ body {
 							margin-top: 25px;
 						}
 
+						.sub-section-header-container {
+							display: inline-block;
+							margin-top: 0px;
+						}
+
 						.first.movement.sub-section-header-container {
-							margin-top: 65px;
+							margin-top: 85px;
 						}
 
 						.first.sub-section-header-container, .sub-section-header-container {
@@ -470,17 +572,13 @@ body {
 						@media (min-width: 1150px) {
 
 							.main-content {
-								width: 45%;
 								float: left;
 								padding-bottom: 10%;
 								padding-left: 5%;
-								padding-top: 5%;
 							}
 
 							.aside-content {
-								width: 50%;
-								float: right;
-								padding-top: 5%;
+								float: left;
 								padding-bottom: 5%;
 							}
 
@@ -492,10 +590,6 @@ body {
 								margin-top: 0px;
 							}
 
-							.sub-section-header-container {
-								display: inline-block;
-								margin-top: 0px;
-							}
 
 						} /*-- End of Media Query >1050px --*/
 
