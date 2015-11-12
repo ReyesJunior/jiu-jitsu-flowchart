@@ -256,7 +256,7 @@ body {
 	width: 100%;
 }
 
-/* --- Media Queries (over 355px) --- */
+/* --- Media Queries (over 350px) --- */
 
 	@media (min-width: 350px) {
 
@@ -273,10 +273,6 @@ body {
 			line-height: 22px;
 		}
 
-		.homepage.sub-section-header-container {
-			margin-top: 85px;
-		}
-
 		.slider-content-container {
 			width: 80%;
 		}
@@ -286,8 +282,7 @@ body {
 			font-size: 15px;
 			line-height: 24px; /* 1.6x */
 		}
-
-	} /*-- End of Media Query >355px --*/
+	} /*-- End of Media Query >350px --*/
 
 
 		@media (min-width: 500px) {
@@ -329,7 +324,9 @@ body {
 				padding: 5% 0 2.5% 0;
 			}
 
-
+			.media-query-content-space-divider {
+				height: 46px;
+			}
 		} /*-- End of Media Query >500px --*/
 
 
@@ -357,7 +354,6 @@ body {
 					width: 65%;
 					padding: 2.5% 0;
 				}
-
 			} /*-- End of Media Query >650px --*/
 
 
@@ -437,6 +433,9 @@ body {
 						line-height: 25px; /* 1.4x */
 					}
 
+					.media-query-content-space-divider {
+						height: 44px;
+					}
 				} /*-- End of Media Query >800px --*/
 
 
@@ -496,12 +495,6 @@ body {
 							margin-top: 25px;
 						}
 
-						.sub-section-header-container {
-							display: inline-block;
-							margin-top: 0px;
-						}
-
-
 						.first.sub-section-header-container, .sub-section-header-container {
 							margin-top: 0px;
 						}
@@ -517,30 +510,27 @@ body {
 							line-height: 22px; /* 1.6x */
 							padding: 2.5% 0;
 						}
-
 					} /*-- End of Media Query >1050px --*/
 
 						@media (min-width: 1150px) {
-
-							.main-content {
-								float: left;
-								padding-bottom: 10%;
-								padding-left: 5%;
-							}
-
-							.aside-content {
-								float: left;
-								padding-bottom: 5%;
-							}
 
 							.teaser-text {
 								margin-top: 15px;
 							}
 
-							.first.sub-section-header-container {
-								margin-top: 0px;
-							}
 						} /*-- End of Media Query >1050px --*/
+
+						@media (min-width: 1390px) {
+
+							.dropdown-slider-panel {
+								width: 97%;
+							}	
+
+							.sub-section-header-container {
+								display: inline-block;
+							}
+						} /*-- End of Media Query >1390px --*/
+
 
 
 
