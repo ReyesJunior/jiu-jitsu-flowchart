@@ -15,6 +15,25 @@ $(document).ready(function () {
     });
   });
 
+// Make local anchors scroll to href smoothly when clicked
+$('a[href*=#]:not([href=#])').click(function() {
+
+  var target = $(this.hash);
+
+   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+     if (target.length) {
+       $('html,body').animate({
+           scrollTop: target.offset().top
+        }, 900);
+        return false;
+      }
+});
+
+// Hide gi-dropdown-menu when anchor is clicked 
+$('a').click(function() {
+  $('.gi-dropdown-menu').hide();
+});
+
 // Toggle Tap Text cards (Read More/Read Less)
 $('.toggle-read-text').toggle(function() {
   // Read more/ Read less button toggle function should act independently from one another when clicked
@@ -91,20 +110,7 @@ $('.toggle-read-text').toggle(function() {
      }
   })
   .resize();//trigger the resize event on page load.
-/*
-  // On window resize > 1050px, move 'section header' within 'main-content' Div
-  $(window).resize(function(){
-     var width = $(window).width();
-     if(width >= 1050){
-         $('.section-header').detach().appendTo('.main-content');
-     }
 
-     else{
-         $('.section-header').detach().appendTo('.section-wrapper');
-     }
-  })
-  .resize();//trigger the resize event on page load
-*/
 
-}); // End of Document loads
+}); // End of $(document).ready function
 
