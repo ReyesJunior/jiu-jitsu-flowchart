@@ -222,8 +222,6 @@ body {
 .scroll-sub-section-paragraph {
 	height: 100%;
 	width: 100%;
-	margin: 5px auto;
-	padding: 5%;
 	font-size: 14px;
 	line-height: 20px; /* 1.4x */
 	color: white;
@@ -278,7 +276,6 @@ body {
 		}
 
 		.scroll-sub-section-paragraph {
-			width: 80%;
 			font-size: 15px;
 			line-height: 24px; /* 1.6x */
 		}
@@ -314,14 +311,11 @@ body {
 
 			.slider-content-container {
 				width: 75%;
-				padding: 2.5% 0% 5% 0%;
 			}
 
 			.scroll-sub-section-paragraph {
-				width: 75%;
 				font-size: 15px;
 				line-height: 24px; /* 1.6x */
-				padding: 5% 0 2.5% 0;
 			}
 
 			.media-query-content-space-divider {
@@ -348,11 +342,6 @@ body {
 
 				.slider-content-container {
 					width: 65%;
-				}
-
-				.scroll-sub-section-paragraph {
-					width: 65%;
-					padding: 2.5% 0;
 				}
 			} /*-- End of Media Query >650px --*/
 
@@ -425,7 +414,7 @@ body {
 					}
 
 					.slider-content-container {
-						width: 675px;
+						width: 60%;
 					}
 
 					.scroll-sub-section-paragraph {
@@ -501,14 +490,11 @@ body {
 
 						.slider-content-container {
 							width: 95%;
-							padding: 2.5% 0%;
 						}
 
 						.scroll-sub-section-paragraph {
-							width: 95%;
 							font-size: 14px;
 							line-height: 22px; /* 1.6x */
-							padding: 2.5% 0;
 						}
 					} /*-- End of Media Query >1050px --*/
 
@@ -523,7 +509,8 @@ body {
 						@media (min-width: 1390px) {
 
 							.dropdown-slider-panel {
-								width: 97%;
+								width: 75%;
+								margin: 0 auto;
 							}	
 
 							.sub-section-header-container {
