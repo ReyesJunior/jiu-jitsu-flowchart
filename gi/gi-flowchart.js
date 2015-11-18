@@ -51,7 +51,7 @@ $('.toggle-read-text').toggle(function() {
       var target = $(this).data('target');
       var $other = $('.js-section-header').not($this)
       // hide all dropdown scroll-paragraphs
-      $('.slider-wrapper').hide();
+      $('.slider-wrapper').slideUp();
       // reset all dropdown arrow's to face up (remove 'rotate' class)
       $('.toggle-scroll-paragraph-button').removeClass('rotate');
       // remove all other 'sub-section-header-clicked' classes  *********** 
@@ -63,7 +63,7 @@ $('.toggle-read-text').toggle(function() {
           // hide selected dropdown scroll-paragraph
           // reset selected dropdown arrow to face up (remove 'rotate' class)
           $('.toggle-scroll-paragraph-button[data-rotate="' + target + '"]').removeClass('rotate');
-          $('.slider-wrapper[data-id="' + target + '"]').hide();
+          $('.slider-wrapper[data-id="' + target + '"]').slideUp();
           $this.removeClass('sub-section-header-clicked');
           // remove all other 'sub-section-header-clicked' classes  *********** 
           $('.js-section-header'.not$this).removeClass('sub-section-header-clicked');
@@ -75,7 +75,7 @@ $('.toggle-read-text').toggle(function() {
             // switch dropdown arrow to face down (add 'rotate' class)
             $('.toggle-scroll-paragraph-button[data-rotate="' + target + '"]').addClass('rotate');
             // Display scroll-paragraph
-            $('.slider-wrapper[data-id="' + target + '"]').slideToggle('display');
+            $('.slider-wrapper[data-id="' + target + '"]').slideDown('display');
         }
  });
 
