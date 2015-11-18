@@ -17,7 +17,7 @@ body {
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
-	background-color: #0074BF;
+	background-color: #E0EEF7;
 }
 
 .content-space-divider {
@@ -129,8 +129,8 @@ body {
 	padding-top: 24px;
 	line-height: 24px; /* 1.5x */
 	text-transform: uppercase;
-	color: #0074BF;
-	background-color: white;
+	color: white;
+	background-color: #035082;
 }
 
 .section-description-container {
@@ -145,7 +145,7 @@ body {
 	font-size: 14px;
 	line-height: 20px; /* 1.4x */
 	padding: 5%;
-	color: white;
+	color: #03436D;
 }
 
 /* ------ Gi Sub-section (global variables) ------ */
@@ -174,7 +174,7 @@ body {
 }
 
 .sub-section-header-clicked {
-	background-color: #3B0492;
+	background-color: #FF1450;
 }
 
 .toggle-scroll-paragraph-button {
@@ -216,7 +216,7 @@ body {
 	width: 90%;
 	padding: 5%;
 	margin: 0 auto;
-	background-color: #3B0492;
+	background-color: #FF1450;
 }
 
 .scroll-sub-section-paragraph {
