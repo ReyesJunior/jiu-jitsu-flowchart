@@ -26,7 +26,7 @@ body {
 }
 
 .media-query-content-space-divider {
-	height: 50px;
+	height: 46px;
 	width: 100%;
 }
 
@@ -57,8 +57,8 @@ body {
 	margin: 0 auto;
 	padding-top: 16px;
 	text-align: center;
-	color: #0074BF;
-	letter-spacing: 0.1em;
+	color: #035082;
+	letter-spacing: 1px;
 }
 
 .gi-flowchart-2 {
@@ -86,9 +86,9 @@ body {
 	position: absolute;
 	height: 320px;
 	width: 175px;
-	top: 44px;
+	top: 45px;
 	left: 0;
-	background-color: #3B0492;
+	background-color: #0074BF;
 }
 
 .gi-dropdown-menu-item {
@@ -103,13 +103,22 @@ body {
 	letter-spacing: 0.1em;
 	text-align: center;
 	list-style: none;
-	background-color: #3B0492;
+	background-color: #0074BF;
 }
 
 .gi-dropdown-menu-item a {
 	color: white;
 	text-decoration: none;
 	text-transform: none;
+}
+
+/* hover features */
+
+:hover.gi-dropdown-menu-item {
+	background-color: white;
+}
+:hover.gi-dropdown-menu-item a {
+	color: #0074BF;
 }
 
 /* ------ Gi Section (global variables) ------ */
@@ -202,7 +211,7 @@ body {
 
 .slider-wrapper {
 	display: none;
-	width: 100%;
+	width: 98%;
 	margin: 0px auto;
 }
 
@@ -291,10 +300,8 @@ body {
 				display: block
 			}
 
-			.alternate.gi-flowchart {
-				font-size: 18px;
-				color: black;
-				padding-top: 14px;
+			.gi-dropdown-menu {
+				top: 44px;
 			}
 
 			.section-header {
@@ -314,7 +321,7 @@ body {
 			}
 
 			.media-query-content-space-divider {
-				height: 46px;
+				height: 42px;
 			}
 		} /*-- End of Media Query >500px --*/
 
@@ -347,9 +354,9 @@ body {
 					.fixed-header-title {
 						display: inline-block;
 						height: 100%;
-						width: 11%;
+						width: 12.5%;
 						float: left;
-						background-color: #3B0492;
+						background-color: #035082;
 					}
 
 					.gi-flowchart-2 {
@@ -361,7 +368,7 @@ body {
 						font-size: 20px;
 						color: white;
 						padding-top: 18px;
-						background-color: #3B0492;
+						background-color: #035082;
 					}
 
 					.alternate.gi-menu {
@@ -377,9 +384,10 @@ body {
 					.alternate.gi-menu-item {
 						display: block;
 						float: left;
+						height: 40px;
+						width: 12.5%;
 						padding-top: 20px;
-						padding-left: 3%;
-						font-size: 14px;
+						font-size: 15px;
 						text-align: center;
 						list-style: none;
 						background-color: white;
@@ -387,9 +395,19 @@ body {
 
 					.alternate.gi-menu-item a {
 						display: inline-block;
-						color: #0074BF;
+						color: #035082;
 						text-decoration: none;
 						text-transform: none;
+					}
+
+					/* :hover features */
+
+					:hover.alternate.gi-menu-item {
+						background-color: #0074BF;
+					}
+
+					:hover.alternate.gi-menu-item a {
+						color: white;
 					}
 
 					.section-header {
@@ -411,7 +429,7 @@ body {
 					}
 
 					.media-query-content-space-divider {
-						height: 44px;
+						height: 40px;
 					}
 				} /*-- End of Media Query >800px --*/
 
@@ -420,10 +438,6 @@ body {
 
 						.menu-button-container,.gi-dropdown-menu, .gi-dropdown-menu-item, .gi-dropdown-menu-item a {
 							display: none;
-						}
-
-						.fixed-header-title {
-							width: 12%;
 						}
 
 						.gi-flowchart {
@@ -436,7 +450,6 @@ body {
 
 						.alternate.gi-menu-item {
 							font-size: 16px;
-							padding-left: 3.5%;
 						}
 
 						.main-content {
@@ -475,7 +488,7 @@ body {
 						.first.sub-section-header-container, .sub-section-header-container {
 							margin-top: 0px;
 						}
-						
+
 						.scroll-sub-section-paragraph {
 							font-size: 14px;
 							line-height: 22px; /* 1.6x */
