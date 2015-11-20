@@ -77,24 +77,21 @@ $('.toggle-read-text').toggle(function() {
             // Display scroll-paragraph
             $('.slider-wrapper[data-id="' + target + '"]').slideDown('display');
         }
- });
+    });
 
 
 // On window Resizes //
-
 // >= 800px
 // On window resize > 800px, move 'Read More/Read Less' button to 2nd paragraph
   $(window).resize(function(){
      var width = $(window).width();
      if(width >= 800){
-         $('.section-description-paragraph:nth-child(2)').removeClass('complete-text');
+        $('.section-description-paragraph:nth-child(2)').removeClass('complete-text');
      }
-     else{
-         $('.section-description-paragraph:nth-child(2)').addClass('complete-text');
+     else {
+        $('.section-description-paragraph:nth-child(2)').addClass('complete-text');
      }
-  })
-  .resize();//trigger the resize event on page load
-
+  }).resize() // Trigger resize function on page load
 
 // >= 1050px
 // On window resize > 1050px, move 'Read More/Read Less' button to 3rd paragraph and hide it
@@ -108,8 +105,28 @@ $('.toggle-read-text').toggle(function() {
          $('.section-description-paragraph:nth-child(3)').addClass('complete-text');
          $('.toggle-read-text').show();
      }
-  })
-  .resize();//trigger the resize event on page load.
+  }).resize() // Trigger resize function on page load
+
+
+// Move the 'slider-wrapper' content to it's specified section 'dropdown-slider-panel'
+$(window).resize(function(){
+
+      var width = $(window).width();
+
+
+      if(width >= 1050){
+        $('.homepage.dropdown-slider-panel').show();
+        $('.homepage.slider-wrapper').appendTo('.homepage.dropdown-slider-panel');
+
+        } else {
+          $('.homepage.dropdown-slider-panel').hide();
+          // homepage sliders
+          $('.movement.slider-wrapper').detach('.homepage.dropdown-slider-panel').appendTo('.movement.slider-wrapper-container');
+          $('.strategy.slider-wrapper').detach('.homepage.dropdown-slider-panel').appendTo('.strategy.slider-wrapper-container');
+          $('.technique.slider-wrapper').detach('.homepage.dropdown-slider-panel').appendTo('.technique.slider-wrapper-container');
+      }
+
+  }).resize() // Trigger resize function on page load
 
 
 }); // End of $(document).ready function
