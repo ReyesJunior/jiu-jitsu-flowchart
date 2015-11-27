@@ -394,7 +394,6 @@ body {
 						font-size: 15px;
 						text-align: center;
 						list-style: none;
-						background-color: white;
 					}
 
 					.alternate.gi-menu-item a {
@@ -407,15 +406,23 @@ body {
 						text-transform: none;
 					}
 
-					/* :hover features */
+					/* :hover/active features */
+
+					.location {
+						background-color: #0074BF;
+					}
+					.location a:link,
+					.location a:visited {
+						color: white;
+					}
 
 					:hover.alternate.gi-menu-item {
-						background-color: #0074BF;
+						background-color: #FF1450;
 					}
 
 					:hover.alternate.gi-menu-item a {
-						color: white;
 						cursor: pointer;
+						color: white;
 					}
 
 					.section-header {
