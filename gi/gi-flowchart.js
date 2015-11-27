@@ -46,18 +46,20 @@ $('.toggle-read-text').toggle(function() {
 
 // limit toggle of scroll-sub-section-paragraphs so only 1 can be active at a time
    $('.js-section-header').click( function() {
-      // default behavior on click event:
+// default behavior on click event:
       var $this = $(this);
       var target = $(this).data('target');
       var $other = $('.js-section-header').not($this)
       // hide all dropdown scroll-paragraphs
       $('.slider-wrapper').slideUp();
+      // make all js-section headers same background-color (to correct for .hover() method)
+       $('.js-section-header').css({"background-color": "#035082"});
       // reset all dropdown arrow's to face up (remove 'rotate' class)
       $('.toggle-scroll-paragraph-button').removeClass('rotate');
       // remove all other 'sub-section-header-clicked' classes  *********** 
       $other.removeClass('sub-section-header-clicked');
 
-      // For current selected js-section-header:
+ // For current selected js-section-header:
       // if it has already been clicked once:
       if ($this.hasClass('sub-section-header-clicked')) {
           // hide selected dropdown scroll-paragraph
@@ -72,6 +74,8 @@ $('.toggle-read-text').toggle(function() {
         else {
             // mark with 'sub-section-header-clicked' Class
             $this.addClass('sub-section-header-clicked');
+            // make this js-section-header have correct backgroun-color (to correct for .hover() method)
+            $this.css({"background-color": "#FF1450"});
             // switch dropdown arrow to face down (add 'rotate' class)
             $('.toggle-scroll-paragraph-button[data-rotate="' + target + '"]').addClass('rotate');
             // Display scroll-paragraph
@@ -79,6 +83,24 @@ $('.toggle-read-text').toggle(function() {
         }
     });
 
+// Hover feature for un-selected js-section header 
+  $('.js-section-header').hover(function() {
+
+// HandlerIn
+    if($(this).hasClass('sub-section-header-clicked')) {
+      $(this).css({"background-color": "#FF1450"});
+    } else {
+      $(this).css({"background-color": "#0074BF"});
+    }
+  }, 
+//HandlerOut
+  function () {
+    if($(this).hasClass('sub-section-header-clicked')) {
+      $(this).css({"background-color": "#FF1450"});
+    } else {
+      $(this).css({"background-color": "#035082"});
+    }
+  });
 
 // On window Resizes //
 // >= 800px
