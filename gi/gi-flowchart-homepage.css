@@ -14,31 +14,15 @@ body {
 	padding: 0;
 }
 
-.wrapper {
+.gi-homepage-wrapper {
 	width: 100%;
 	margin: 0 auto;
 	background-color: #E0EEF7;
 }
 
-.content-space-divider {
-	height: 50px;
-	width: 100%;
-}
+/* fixed-top-menu-bar and menu-header(s) */
 
-.media-query-content-space-divider {
-	height: 46px;
-	width: 100%;
-}
-
-/* Altenate Menu */
-
-.alternate.gi-menu, .alternate.gi-menu-item, .alternate.gi-menu-item a {
-	display: none;
-}
-
-/* Fixed-Header and Header-title */
-
-.fixed-header {
+.fixed-top-menu-bar {
 	position: fixed;
 	height: 60px;
 	width: 100%;
@@ -52,7 +36,7 @@ body {
 	margin: 0 auto;
 }
 
-.gi-flowchart, .gi-flowchart-2 {
+.mobile-header, .desktop-header {
 	font-size: 28px;
 	margin: 0 auto;
 	padding-top: 16px;
@@ -61,27 +45,27 @@ body {
 	letter-spacing: 1px;
 }
 
-.gi-flowchart-2 {
+.desktop-header {
 	display: none;
 }
 
 /* Dropdown menu button and container */
 
-.menu-button-container {
+.mobile-menu-button-container {
 	height: 50px;
 	width: 50px;
 	margin: 5px auto;
 	float: left;
 }
 
-.dropdown-menu-button {
+.mobile-menu-button {
 	height: 100%;
 	width: 100%;
 	background-image: url('https://ddiostips.files.wordpress.com/2013/12/burger.png?w=470');
 	background-size: cover;
 }
 
-.gi-dropdown-menu {
+.gi-mobile-menu {
 	display: none;
 	position: absolute;
 	height: 320px;
@@ -91,7 +75,7 @@ body {
 	background-color: #0074BF;
 }
 
-.gi-dropdown-menu-item {
+.gi-mobile-menu-item {
 	position: relative;
 	height: 30px;
 	width: 170px;
@@ -106,7 +90,7 @@ body {
 	background-color: #0074BF;
 }
 
-.gi-dropdown-menu-item a {
+.gi-mobile-menu-item a {
 	color: white;
 	text-decoration: none;
 	text-transform: none;
@@ -114,9 +98,15 @@ body {
 
 /* hover features */
 
-:hover.gi-dropdown-menu-item {
+:hover.gi-mobile-menu-item {
 	background-color: white;
 }
-:hover.gi-dropdown-menu-item a {
+:hover.gi-mobile-menu-item a {
 	color: #0074BF;
+}
+
+/* Altenate Menu */
+
+.alternate.gi-menu, .alternate.gi-menu-item, .alternate.gi-menu-item a {
+	display: none;
 }
