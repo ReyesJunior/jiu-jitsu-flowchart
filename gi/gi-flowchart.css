@@ -451,6 +451,10 @@ body {
 
 					@media (min-width: 1050px) {
 
+						.sub-section-header-container {
+								width: 300px;
+							}
+
 						.menu-button-container,.gi-dropdown-menu, .gi-dropdown-menu-item, .gi-dropdown-menu-item a {
 							display: none;
 						}
@@ -477,7 +481,7 @@ body {
 						}
 
 						.aside-content {
-							width: 40%;
+							width: 42.5%;
 							float: left;
 							padding-top: 5%;
 							padding-bottom: 5%;
@@ -524,10 +528,6 @@ body {
 								width: 75%;
 								margin: 0 auto;
 							}	
-
-							.sub-section-header-container {
-								display: inline-block;
-							}
 						} /*-- End of Media Query >1390px --*/
 
 
