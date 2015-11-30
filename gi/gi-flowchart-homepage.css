@@ -114,12 +114,16 @@ body {
 
 /* Section Queue Cards */
 
+.queue-card-anchor {
+	display: block;
+	margin: 0;
+}
+
 .queue-card {
 	height: 125px;
 	width: 100%;
 	margin: 0px auto;
-	background-color: #E0EEF7;
-	border-top: 1px solid #0074BF;
+	border-top: 1px solid white;
 	background-position: center;
 	background-size: cover;
 }
@@ -127,13 +131,14 @@ body {
 .queue-image-overlay{
 	height: 100%;
 	width: 100%;
-	background-color: rgba(7, 23, 102, 0.45);
+	margin: 0;
+	background-color: rgba(0, 14, 80, 0.45);
 }
 
 .queue-header-strip {
 	width: 90%;
 	height: 25px;
-	margin: 0 auto;
+	margin: 0 auto 10px;
 }
 
 .queue-header {
@@ -147,20 +152,16 @@ body {
 }
 
 .queue-title {
-	margin-bottom: 0;
-	padding: 0;
-}
-
-.queue-title a {
 	display: inline-block;
 	font-size: 15px;
-	padding: 10px 25px 20px;
+	margin: 0;
+	padding: 10px 25px 15px;
 	color: white;
-	text-decoration: none;
 }
 
 .about.queue-card {
 	height: 200px;
+	width: 100%;
 	margin-top: 62px;
 	background-image: url(http://www.graciebarra.com/wp-content/uploads/2015/01/Takedowns1.jpg);
 }
@@ -185,7 +186,7 @@ body {
 }
 
 .dominated.queue-card {
-	border-bottom: 1px solid #0074BF;
+	border-bottom: 1px solid white;
 	background-image: url(http://www.graciemag.com/pt/wp-content/uploads/2012/02/Kyra-ataca-as-costas-no-Jiu-Jitsu1.jpg);
 
 }
