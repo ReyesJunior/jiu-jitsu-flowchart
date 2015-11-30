@@ -114,15 +114,26 @@ body {
 
 /* Section Queue Cards */
 
-.top-header-container {
+.queue-card {
+	height: 125px;
 	width: 100%;
+	margin: 0px auto;
+	background-color: #E0EEF7;
+	border: 1px solid #0074BF;
+	background-position: center;
+	background-size: cover;
+}
+
+.top-header-strip {
+	width: 75%;
 	height: 25px;
+	background-color: yellow;
 	margin: 0 auto;
 }
 
 .top-header {
+	background-color: blue;
 	font-family: arial;
-	height: 90%;
 	width: 50%;
 	float: left;
 	margin: 0;
@@ -136,48 +147,33 @@ body {
 
 .about.queue-card {
 	height: 250px;
-	width: 90%;
-	margin: 62px auto 2px auto;
-	background-color: #E0EEF7;
-	border: 2px solid #0074BF;
+	margin-top: 62px;
+	border-top: 2px solid #0074BF;
+	background-image: url(http://www.graciebarra.com/wp-content/uploads/2015/01/Takedowns1.jpg);
+
 }
 
 .stand-up.queue-card {
-	height: 150px;
-	width: 90%;
-	margin: 2px auto;
-	background-color: #E0EEF7;
-	border: 2px solid #0074BF;
+	background-image: url(https://img.breakingmuscle.com/sites/default/files/imagecache/full_width/images/bydate/aug_29_2012_-_1146am/shutterstock_3152625.jpg);
 }
 
 .guard-play.queue-card {
-	height: 150px;
-	width: 90%;
-	margin: 2px auto;
-	background-color: #E0EEF7;
-	border: 2px solid #0074BF;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c8/Brazilian_Jiu-jitsu-Closed_guard.jpg);
+
 }
 
 .guard-passing.queue-card {
-	height: 150px;
-	width: 90%;
-	margin: 2px auto;
-	background-color: #E0EEF7;
-	border: 2px solid #0074BF;
+	background-image: url(http://www.grapplearts.com/wp-content/uploads/2012/04/Margarida-Guard-Pass-5.jpg);
+
 }
 
 .dominating.queue-card {
-	height: 150px;
-	width: 90%;
-	margin: 2px auto;
-	background-color: #E0EEF7;
-	border: 2px solid #0074BF;
+	background-image: url(http://www.graciemag.com/en/wp-content/uploads/2013/12/victorestimabw.jpg);
+
 }
 
 .dominated.queue-card {
-	height: 150px;
-	width: 90%;
-	margin: 2px auto;
-	background-color: #E0EEF7;
-	border: 2px solid #0074BF;
+	border-bottom: 2px solid #0074BF;
+	background-image: url(http://www.graciemag.com/pt/wp-content/uploads/2012/02/Kyra-ataca-as-costas-no-Jiu-Jitsu1.jpg);
+
 }
