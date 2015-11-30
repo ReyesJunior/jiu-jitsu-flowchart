@@ -124,14 +124,14 @@ body {
 	background-size: cover;
 }
 
-.top-header-strip {
+.queue-header-strip {
 	width: 75%;
 	height: 25px;
 	background-color: yellow;
 	margin: 0 auto;
 }
 
-.top-header {
+.queue-header {
 	background-color: blue;
 	font-family: arial;
 	width: 50%;
