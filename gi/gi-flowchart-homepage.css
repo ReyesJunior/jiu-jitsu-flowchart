@@ -1,0 +1,122 @@
+
+/* Colors used: 
+
+light blue: #0074BF;
+Dark Blue: #035082
+Purple: #3B0492
+
+*/
+
+
+body {
+	font-family: sans-serif;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #E0EEF7;
+}
+
+.content-space-divider {
+	height: 50px;
+	width: 100%;
+}
+
+.media-query-content-space-divider {
+	height: 46px;
+	width: 100%;
+}
+
+/* Altenate Menu */
+
+.alternate.gi-menu, .alternate.gi-menu-item, .alternate.gi-menu-item a {
+	display: none;
+}
+
+/* Fixed-Header and Header-title */
+
+.fixed-header {
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	top: 0px;
+	background-color: white;
+}
+
+.fixed-header-title {
+	height: 100%;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.gi-flowchart, .gi-flowchart-2 {
+	font-size: 28px;
+	margin: 0 auto;
+	padding-top: 16px;
+	text-align: center;
+	color: #035082;
+	letter-spacing: 1px;
+}
+
+.gi-flowchart-2 {
+	display: none;
+}
+
+/* Dropdown menu button and container */
+
+.menu-button-container {
+	height: 50px;
+	width: 50px;
+	margin: 5px auto;
+	float: left;
+}
+
+.dropdown-menu-button {
+	height: 100%;
+	width: 100%;
+	background-image: url('https://ddiostips.files.wordpress.com/2013/12/burger.png?w=470');
+	background-size: cover;
+}
+
+.gi-dropdown-menu {
+	display: none;
+	position: absolute;
+	height: 320px;
+	width: 175px;
+	top: 45px;
+	left: 0;
+	background-color: #0074BF;
+}
+
+.gi-dropdown-menu-item {
+	position: relative;
+	height: 30px;
+	width: 170px;
+	margin-top: 2px;
+	margin-left: -20px;
+	left: 0px;
+	padding-top: 12px;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	list-style: none;
+	background-color: #0074BF;
+}
+
+.gi-dropdown-menu-item a {
+	color: white;
+	text-decoration: none;
+	text-transform: none;
+}
+
+/* hover features */
+
+:hover.gi-dropdown-menu-item {
+	background-color: white;
+}
+:hover.gi-dropdown-menu-item a {
+	color: #0074BF;
+}
