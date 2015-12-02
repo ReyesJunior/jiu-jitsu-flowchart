@@ -15,6 +15,13 @@ body {
 
 /* ------ Gi Section (global variables) ------ */
 
+.page-wrapper {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #E0EEF7;
+	overflow: hidden;
+}
+
 /* fixed-top-menu-bar and menu-header(s) */
 
 .fixed-top-menu-bar {
@@ -251,21 +258,6 @@ body {
 	width: 100%;
 }
 
-/* Page wrappers */
-
-.wrapper {
-	width: 100%;
-	margin: 0 auto;
-	background-color: #E0EEF7;
-}
-
-.gi-homepage-wrapper {
-	width: 100%;
-	margin: 0 auto;
-	background-color: #E0EEF7;
-	overflow: hidden;
-}
-
 /* ------ Homepage Section ------ */
 
 /* Section Queue Cards */
@@ -353,11 +345,23 @@ body {
 	background-image: url(http://www.graciemag.com/pt/wp-content/uploads/2012/02/Kyra-ataca-as-costas-no-Jiu-Jitsu1.jpg);
 }
 
+/* ------ About Section ------ */
+
+
 /* ------ Stand-up Section ------ */
 
 .clinch-control.sub-section-header {
 	width: 100%;
 }
+
+/* ------ Guard-play Section ------ */
+
+
+/* ------ Guard-passing Section ------ */
+
+
+/* ------ Dominating Section ------ */
+
 
 /* ------ Dominated Section ----- */
 
