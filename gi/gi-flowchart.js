@@ -2,53 +2,26 @@
 
 $(document).ready(function () {
 
-// Gi Homepage
+// Global JS
 
-// Toggle SlideDown/Slideup Menu when clicking dropdown-menu-button
+// Toggle Mobile menu when clicking mobile-menu-button
+
   $('.mobile-menu-button').click( function() {
     $('.gi-mobile-menu').animate({height: 'toggle'}, 250, function () {
     });
   });
 
+// Toggle Mobile menu when clicking gi-mobile-menu-item
 
-// Toggle SlideDown/Slideup Menu when clicking gi-dropdown-menu-item
   $('.gi-mobile-menu-item').click( function() {
     $('.gi-mobile-menu').animate({height: 'toggle'}, 250, function () {
     });
   });
 
-  //Rest of Site
+// Hide gi-mobile-menu when any anchor is clicked 
 
-// Toggle SlideDown/Slideup Menu when clicking dropdown-menu-button
-  $('.dropdown-menu-button').click( function() {
-    $('.gi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
-    });
-  });
-
-
-// Toggle SlideDown/Slideup Menu when clicking gi-dropdown-menu-item
-  $('.gi-dropdown-menu-item').click( function() {
-    $('.gi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
-    });
-  });
-
-// Make local anchors scroll to href smoothly when clicked
-$('a[href*=#]:not([href=#])').click(function() {
-
-  var target = $(this.hash);
-
-   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-     if (target.length) {
-       $('html,body').animate({
-           scrollTop: target.offset().top
-        }, 900);
-        return false;
-      }
-});
-
-// Hide gi-dropdown-menu when anchor is clicked 
 $('a').click(function() {
-  $('.gi-dropdown-menu').hide();
+  $('.gi-mobile-menu').hide();
 });
 
 // Toggle Tap Text cards (Read More/Read Less)
@@ -62,6 +35,7 @@ $('.toggle-read-text').toggle(function() {
 });
 
 // limit toggle of scroll-sub-section-paragraphs so only 1 can be active at a time
+
    $('.js-section-header').click( function() {
 // default behavior on click event:
       var $this = $(this);
@@ -207,41 +181,6 @@ $(window).resize(function(){
       }
 
   }).resize() // Trigger resize function on page load
-
-// Highlight menu item (on click/scroll/or page location)
-// Cache selectors
-var lastId,
-    topMenu = $(".alternate.gi-menu"),
-    topMenuHeight = topMenu.outerHeight(),
-    // All list items
-    menuItems = topMenu.find("a"),
-    // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function(){
-      var item = $($(this).attr("href"));
-      if (item.length) { return item; }
-    });
-// Bind to scroll
-$(window).scroll(function(){
-   // Get container scroll position
-   var fromTop = $(this).scrollTop()+topMenuHeight;
-   
-   // Get id of current scroll item
-   var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
-       return this;
-   });
-   // Get the id of the current element
-   cur = cur[cur.length-1];
-   var id = cur && cur.length ? cur[0].id : "";
-   
-   if (lastId !== id) {
-       lastId = id;
-       // Set/remove active class
-       menuItems
-         .parent().removeClass("location")
-         .end().filter("[href=#"+id+"]").parent().addClass("location");
-   }                   
-});
 
 }); // End of $(document).ready function
 
