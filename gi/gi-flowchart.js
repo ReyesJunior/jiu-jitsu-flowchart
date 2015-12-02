@@ -2,6 +2,23 @@
 
 $(document).ready(function () {
 
+// Gi Homepage
+
+// Toggle SlideDown/Slideup Menu when clicking dropdown-menu-button
+  $('.mobile-menu-button').click( function() {
+    $('.gi-mobile-menu').animate({height: 'toggle'}, 250, function () {
+    });
+  });
+
+
+// Toggle SlideDown/Slideup Menu when clicking gi-dropdown-menu-item
+  $('.gi-mobile-menu-item').click( function() {
+    $('.gi-mobile-menu').animate({height: 'toggle'}, 250, function () {
+    });
+  });
+
+  //Rest of Site
+
 // Toggle SlideDown/Slideup Menu when clicking dropdown-menu-button
   $('.dropdown-menu-button').click( function() {
     $('.gi-dropdown-menu').animate({height: 'toggle'}, 250, function () {
