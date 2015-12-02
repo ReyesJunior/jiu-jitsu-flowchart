@@ -119,6 +119,14 @@ body {
 	margin: 0;
 }
 
+.queue-image-overlay:hover {
+	background-color: rgba(0, 14, 80, 0.85);
+}
+
+.queue-card-wrapper {
+	display: inline-block;
+}
+
 .queue-card {
 	height: 125px;
 	width: 100%;
@@ -154,7 +162,6 @@ body {
 .queue-title {
 	display: inline-block;
 	font-size: 15px;
-	margin: 0;
 	padding: 10px 25px 15px;
 	color: white;
 }
