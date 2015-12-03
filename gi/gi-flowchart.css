@@ -5,7 +5,10 @@
 light blue: #0074BF;
 Dark Blue: #035082
 Purple: #3B0492
+Light blue (wrapper background): background-color: #E0EEF7;;
 */
+
+/* ------ Gi Section (global variables) ------ */
 
 body {
 	font-family: arial;
@@ -13,13 +16,11 @@ body {
 	padding: 0;
 }
 
-/* ------ Gi Section (global variables) ------ */
-
 .page-wrapper {
 	width: 100%;
 	margin: 0 auto;
-	background-color: #E0EEF7;
 	overflow: hidden;
+	background-color: white;
 }
 
 /* fixed-top-menu-bar and menu-header(s) */
@@ -29,7 +30,7 @@ body {
 	height: 60px;
 	width: 100%;
 	top: 0px;
-	background-color: white;
+	background-color: #035082;
 }
 
 .menu-header {
@@ -43,7 +44,7 @@ body {
 	margin: 0 auto;
 	padding-top: 16px;
 	text-align: center;
-	color: #035082;
+	color: white;
 	letter-spacing: 1px;
 }
 
@@ -98,7 +99,7 @@ body {
 	text-transform: none;
 }
 
-/* mobile menu hover */
+/* :hover */
 
 :hover.gi-mobile-menu-item {
 	background-color: white;
@@ -113,38 +114,40 @@ body {
 	display: none;
 }
 
+/* Section variables */
+
 .section-wrapper {
 	width: 100%;
-	margin-top: 0px;
 	overflow: hidden; /* To have parent Div cover all it's children */
 }
 
 .section-header {
-	height: 70px;
-	width: 100%;
-	font-size: 20px;
+	margin: 85px auto 10px auto;
+	padding: 10px 25px 15px;
+	font-size: 24px;
 	text-align: center;
-	letter-spacing: 8px;
-	padding-top: 24px;
-	line-height: 24px; /* 1.5x */
+	letter-spacing: 6px;
+	line-height: 32px;
 	text-transform: uppercase;
-	color: white;
-	background-color: #035082;
+	color: #035082;
 }
 
 .section-description-container {
 	height: 100%;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 }
 
 .section-description-paragraph {
 	width: 90%;
-	margin: 0 auto;
-	font-size: 14px;
-	line-height: 20px; /* 1.4x */
-	padding: 5%;
-	color: #03436D;
+	margin: 0 auto 15px auto;
+	font-size: 15px;
+	line-height: 20px;
+	color: #035082;
+}
+
+.aside-content {
+	padding-bottom: 80px;
 }
 
 /* ------ Gi Sub-section (global variables) ------ */
@@ -176,7 +179,7 @@ body {
 	background-color: #FF1450;
 }
 
-/* hover */
+/* :hover */
 
 .js-section-header:hover {
 	cursor: pointer;
@@ -231,7 +234,7 @@ body {
 	color: white;
 }
 
-/* Toggle Tap cards */
+/* Toggle Read Tap cards */
 
 .complete-text {
 	display: none;
@@ -243,19 +246,10 @@ body {
 	padding: 5px;
 	color: white;
 	width: 60px;
-	margin: 5px auto;
+	margin: 40px auto 0 auto;
 }
-
-/* Space dividers */
-
-.content-space-divider {
-	height: 50px;
-	width: 100%;
-}
-
-.media-query-content-space-divider {
-	height: 46px;
-	width: 100%;
+.sub-section.toggle-read-text {
+	border: 2px solid white;
 }
 
 /* ------ Homepage Section ------ */
@@ -347,7 +341,6 @@ body {
 
 /* ------ About Section ------ */
 
-
 /* ------ Stand-up Section ------ */
 
 .clinch-control.sub-section-header {
@@ -356,12 +349,9 @@ body {
 
 /* ------ Guard-play Section ------ */
 
-
 /* ------ Guard-passing Section ------ */
 
-
 /* ------ Dominating Section ------ */
-
 
 /* ------ Dominated Section ----- */
 
@@ -377,10 +367,8 @@ body {
 
 
 		.section-header {
-			padding-top: 20px;
-			padding-bottom: 8px;
-			font-size: 22px;
-			line-height: 30px; /* x1.4 */
+			font-size: 26px;
+			line-height: 36px;
 		}
 
 		.section-description-paragraph {
@@ -394,61 +382,40 @@ body {
 
 		.scroll-sub-section-paragraph {
 			font-size: 15px;
-			line-height: 24px; /* 1.6x */
+			line-height: 24px;
 		}
 	} /*-- End of Media Query >350px --*/
 
 
 		@media (min-width: 500px) {
 
-			.gi-flowchart {
-				display: none;
-			}
-
-			.gi-flowchart-2 {
-				display: block
-			}
-
-			.gi-dropdown-menu {
-				top: 44px;
-			}
-
 			.section-header {
-				font-size: 24px;
-				line-height: 30px; /* 1.4x */
+				font-size: 28px;
+				line-height: 42px;
+				width: 450px;
 			}
 
 			.section-description-paragraph {
-				width: 75%;
-				font-size: 15px;
-				line-height: 23px; /* 1.5x */
+				width: 80%;
 			}
 
 			.scroll-sub-section-paragraph {
 				font-size: 15px;
-				line-height: 24px; /* 1.6x */
+				line-height: 24px;
 			}
 
-			.media-query-content-space-divider {
-				height: 42px;
-			}
 		} /*-- End of Media Query >500px --*/
 
 
 			@media (min-width: 650px) {
 
 				.section-header {
-					padding-bottom: 24px;
-					font-size: 26px;
-					line-height: 36px; /* x1.4 */
+					font-size: 32px;
+					line-height: 44px;
 				}
 
 				.section-description-paragraph {
-					width: 70%;
-				}
-
-				.sub-section-header-container {
-					margin-top: 15px;
+					width: 75%;
 				}
 
 			} /*-- End of Media Query >650px --*/
@@ -456,89 +423,10 @@ body {
 
 				@media (min-width: 800px) {
 
-					.menu-button-container {
-						display: none;
-					}
-
-					.fixed-header-title {
-						display: inline-block;
-						height: 100%;
-						width: 12.5%;
-						float: left;
-						background-color: #035082;
-					}
-
-					.gi-flowchart-2 {
-						display: none;
-					}
-
-					.gi-flowchart {
-						display: block;
-						font-size: 20px;
-						color: white;
-						padding-top: 18px;
-						background-color: #035082;
-					}
-
-					.alternate.gi-menu {
-						display: block;
-						height: 100%;
-						width: 100%;
-						margin-top: 0;
-						background-color: white;
-					}
-
-					/* Alternate menu */
-
-					.alternate.gi-menu-item {
-						display: block;
-						float: left;
-						width: 12.5%;
-						font-size: 15px;
-						text-align: center;
-						list-style: none;
-					}
-
-					.alternate.gi-menu-item a {
-						display: inline-block;
-						width: 100%;
-						height: 40px;
-						padding-top: 20px;
-						color: #035082;
-						text-decoration: none;
-						text-transform: none;
-					}
-
-					/* :hover/active features */
-
-					.location {
-						background-color: #0074BF;
-					}
-					.location a:link,
-					.location a:visited {
-						color: white;
-					}
-
-					:hover.alternate.gi-menu-item {
-						background-color: #FF1450;
-					}
-
-					:hover.alternate.gi-menu-item a {
-						cursor: pointer;
-						color: white;
-					}
-
-					.section-header {
-						padding-bottom: 28px;
-						font-size: 28px;
-						line-height: 39px; /* x1.4 */
-					}
-
 					.section-description-paragraph {
-						width: 65%;
+						width: 70%;
 						font-size: 16px;
 						line-height: 24px; /* 1.5x */
-						padding: 3% 0;
 					}
 
 					.scroll-sub-section-paragraph {
@@ -546,39 +434,16 @@ body {
 						line-height: 25px; /* 1.4x */
 					}
 
-					.media-query-content-space-divider {
-						height: 40px;
-					}
 				} /*-- End of Media Query >800px --*/
 
 
 					@media (min-width: 1050px) {
 
-						.sub-section-header-container {
-								width: 300px;
-							}
-
-						.menu-button-container,.gi-dropdown-menu, .gi-dropdown-menu-item, .gi-dropdown-menu-item a {
-							display: none;
-						}
-
-						.gi-flowchart {
-							display: block;
-							font-size: 24px;
-							padding-top: 18px;
-						}
-
-						/* Altenate Fixed-header & Menu */
-
-						.alternate.gi-menu-item {
-							font-size: 16px;
-						}
-
 						.main-content {
-							width: 55%;
+							width: 50%;
 							float: left;
 							padding-bottom: 10%;
-							padding-left: 2.5%;
+							padding-left: 5%;
 							padding-top: 5%;
 							text-align: justify;
 						}
@@ -591,24 +456,21 @@ body {
 						}
 
 						.section-header {
-							width: 90%;
-							margin: 0 auto;
-							padding-bottom: 18px;
-							font-size: 24px;
-							line-height: 30px; /* 1.4x */
+							margin-top: 50px;
 						}
 
 						.section-description-paragraph {
-							width: 100%;
-							padding: 2.5% 0;
+							width: 90%;
 						}
 
 						.teaser-text {
-							margin-top: 25px;
+							margin-top: 15px;
 						}
 
-						.first.sub-section-header-container, .sub-section-header-container {
-							margin-top: 0px;
+						.sub-section-header-container {
+							height: auto;
+							margin: 2px auto;
+							padding: 5px;
 						}
 
 						.scroll-sub-section-paragraph {
@@ -628,7 +490,7 @@ body {
 						@media (min-width: 1390px) {
 
 							.dropdown-slider-panel {
-								width: 75%;
+								width: 100%;
 								margin: 0 auto;
 							}	
 						} /*-- End of Media Query >1390px --*/
