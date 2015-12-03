@@ -71,41 +71,37 @@ body {
 .gi-mobile-menu {
 	display: none;
 	position: absolute;
-	height: 320px;
+	height: 350px;
 	width: 175px;
-	top: 45px;
+	top: 44px;
 	left: 0;
 	background-color: #0074BF;
 }
 
-.gi-mobile-menu-item {
-	position: relative;
+.gi-mobile-menu-anchor, .gi-menu-anchor {
+	display: block;
 	height: 30px;
-	width: 170px;
-	margin-top: 2px;
-	margin-left: -20px;
-	left: 0px;
 	padding-top: 12px;
-	font-size: 16px;
-	letter-spacing: 0.1em;
-	text-align: center;
-	list-style: none;
-	background-color: #0074BF;
-}
-
-.gi-mobile-menu-item a {
+	margin-left: -40px;
+	margin-bottom: 2px;
+    width: 215px;
 	color: white;
 	text-decoration: none;
 	text-transform: none;
 }
 
+.gi-mobile-menu-item {
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	list-style: none;
+}
+
 /* :hover */
 
-:hover.gi-mobile-menu-item {
-	background-color: white;
-}
-:hover.gi-mobile-menu-item a {
+.gi-mobile-menu-anchor:hover, .gi-menu-anchor:hover {
 	color: #0074BF;
+	background-color: white;
 }
 
 /* Altenate Menu */
