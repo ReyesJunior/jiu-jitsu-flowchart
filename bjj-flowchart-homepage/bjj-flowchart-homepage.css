@@ -101,19 +101,40 @@ body {
 	display: none;
 }
 
+/* background-banner */
+
+.bjj.background-banner {
+	height: 350px;
+	width: 100%;
+	margin-top: 60px;
+	background-image: url(https://cdn.shopify.com/s/files/1/0084/5022/products/IMG_2106_2048x2048.JPG?v=1449004652);
+	background-position: center;
+	background-size: cover;
+
+}
+
+.background-banner-image-overlay {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
 /* Section Queue Cards */
 
 .queue-card-anchor {
 	display: block;
 	margin: 0;
+	text-decoration: none;
 }
 
 .queue-image-overlay:hover {
-	background-color: rgba(0, 14, 80, 0.85);
+	background-color: rgba(0, 0, 0, 0.85);
 }
 
 .queue-card-wrapper {
 	display: inline-block;
+	width: 100%;
 }
 
 .queue-card {
@@ -129,7 +150,7 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	background-color: rgba(0, 14, 80, 0.45);
+	background-color: rgba(0, 0, 0, 0.35);
 }
 
 .queue-header-strip {
@@ -139,10 +160,10 @@ body {
 }
 
 .queue-header {
-	font-size: 14px;
-	float: left;
-	margin: 0;
-	padding: 10px 12px 0;
+	font-size: 20px;
+	margin: 0 auto;
+	padding: 35px 12px 0;
+	text-align: center;
 	text-transform: uppercase;
 	font-weight: 800;
 	color: red;
@@ -150,6 +171,7 @@ body {
 
 .queue-title {
 	display: inline-block;
+	margin-top: 50px;
 	font-size: 15px;
 	padding: 10px 25px 15px;
 	color: white;
@@ -161,12 +183,11 @@ body {
 }
 
 .gi.queue-card {
-	margin-top: 60px;
 	background-image: url(http://www.graciebarra.com/wp-content/uploads/2015/01/Takedowns1.jpg);
 }
 
 .nogi.queue-card {
-	background-image: url(https://img.breakingmuscle.com/sites/default/files/imagecache/full_width/images/bydate/aug_29_2012_-_1146am/shutterstock_3152625.jpg);
+	background-image: url(http://gracielasvegas.com/wp-content/uploads/2015/08/no-gi.jpg);
 }
 
 
